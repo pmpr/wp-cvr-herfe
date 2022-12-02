@@ -1,0 +1,19 @@
+{% if events is not empty %}
+    <div class="my-6 my-lg-8">
+        <h2 class="sr-only">{{ __('Events', domain) }}</h2>
+        {% for event in events %}
+            <article class="mb-5">
+                {% include get_template('./block', _self) with {
+                    has_figure: 0
+                } %}
+            </article>
+        {% endfor %}
+    </div>
+
+    {% include get_cover_template('common/archive/pagination') %}
+
+{% else %}
+    <p class="text-muted my-5">
+        {{ __('There are currently no events in this field.', domain) }}
+    </p>
+{% endif %}

@@ -1,0 +1,13 @@
+<div class="d-flex mb-4">
+    {% include get_cover_template('common/logo') with {
+        logo: logo,
+        width: 64,
+        height: 64
+    } %}
+
+    <div class="ml-2 fs-sm font-weight-bold mt-auto">
+        {{ title|raw }}
+    </div>
+</div>
+{{ description|raw }}
+

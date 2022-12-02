@@ -1,0 +1,23 @@
+{
+  "name": "pmpr-cvr/wp-cvr-herfe",
+  "type": "project",
+  "license": "proprietary",
+  "description": "Herfe Cover for Wordpress",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "cover",
+    "herfe"
+  ],
+  "require": {
+    "php": ">=7.4",
+    "pmpr-cmn/wp-cmn-cover": "~1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pmpr\\Cover\\Herfe\\": "src/Pmpr/Cover/Herfe"
+    }
+  },
+  "minimum-stability": "dev",
+  "version": "1.0.0"
+}

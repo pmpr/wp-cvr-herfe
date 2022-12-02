@@ -1,0 +1,29 @@
+{% extends get_cover_template('sidebarable') %}
+
+{% set gallery = pmpr_apply_filters('get_gallery_post_data', [], {post: post}) %}
+
+{% block content %}
+
+    {% include get_cover_template('common/header/index') with {
+        has_container: 0
+    } %}
+
+    {% include get_template('../event/list', _self) with {
+        events: gallery.events,
+        pagination_args: gallery.pagination_args,
+    } %}
+
+    {% include get_template('../content', _self) with {
+        more_information_title: gallery.more_information_title
+    }  %}
+
+{% endblock %}
+
+{% block sidebar %}
+
+    {{ parent() }}
+    {% include get_template('../sidebar', _self) with {
+        object: gallery
+    } %}
+{% endblock %}
+

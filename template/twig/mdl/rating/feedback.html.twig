@@ -1,0 +1,10 @@
+{% if fields is defined
+    and fields is not empty %}
+
+    <div class="rating-feedback my-5 bg-gray-1 p-4 d-none">
+        <p class="rating-feedback-question text-left">{{ question|raw }}</p>
+        {% for field in fields %}
+            {{ field|call('render')|raw }}
+        {% endfor %}
+    </div>
+{% endif %}

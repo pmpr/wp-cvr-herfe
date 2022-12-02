@@ -1,0 +1,11 @@
+{% if directions is not empty %}
+    {% for key, direction in directions %}
+        <a href="{{ direction.url|esc_url }}"
+           title="{{ direction.title|esc_attr }}"
+           class="mr-3 hover-transient bg-white-primary"
+           rel="noopener noreferrer nofollow" target="_blank">
+            {{ render_icon(direction.icon, {class: 'svg-icon icon-' ~ icon_size|default('lg') ~ ' hover-transient icon-primary icon-hover-white '}) }}
+        </a>
+
+    {% endfor %}
+{% endif %}

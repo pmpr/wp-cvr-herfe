@@ -1,0 +1,58 @@
+{% set row_class = 'mb-6' %}
+{% set sidebar_first = 1 %}
+{% extends get_cover_template('sidebarable') %}
+
+{% block sidebar %}
+    {{ parent() }}
+    {% include get_template('./magazines', _self) %}
+{% endblock %}
+
+{% block content %}
+
+    {% set current  = pmpr_apply_filters('get_current_magazine', 0) %}
+    {% set magazine = pmpr_apply_filters('get_magazine_post_data', [], {post: current}) %}
+
+    <div class="d-flex">
+
+        {% include get_cover_template('common/header/index') with {
+            has_container: 0,
+            title_attrs: {class: 'text-nowrap'}
+        } %}
+
+        {{ pmpr_do_action('browser_render', {
+            items: magazine.article_categories,
+            taxonomy: 'article_category'
+        }) }}
+
+    </div>
+
+    {% if is_page() and content_text is empty %}
+
+        {% set content_text = get_the_content(current) %}
+
+    {% endif %}
+
+    {% if content_text %}
+        <div class="my-5">
+            {% include get_cover_template('common/more_less') with {
+                content: wpautop(content_text),
+            } %}
+
+            {% if magazine.related_product is not empty %}
+                <a href="{% if not magazine.related_product.enable %}#{% else %}{{ magazine.related_product.permalink|esc_attr }}{% endif %}"
+                   class="btn main-action{% if not magazine.related_product.enable %} disabled{% endif %}">
+                    {{ magazine.related_product.title|raw }}
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% include get_cover_template('common/archive/content') with {
+        lg_col: 4,
+        posts: magazine.products,
+        empty_message: magazine.empty_message,
+        pagination_args: magazine.pagination_args
+    } %}
+
+{% endblock %}
+

@@ -1,0 +1,36 @@
+{% set text_color = text_color|default('white-secondary') %}
+
+{% set content %}
+
+    {% if item.type is same as ('email') %}
+        {% set array = value|split('', 6) %}
+        {% set content_value = '' %}
+        {% for val in array %}
+            {% set content_value = content_value ~ '<span>' ~ val ~ '</span>' %}
+        {% endfor %}
+    {% else %}
+        {% set content_value = value %}
+    {% endif %}
+    <span class="font-weight-bold">
+        {{ content_value|raw }}
+    </span>
+{% endset %}
+
+{% if item.type is same as ('phone') %}
+
+    {% set value = value|replace({'_': '', '-': ''}) %}
+    {% set prefix = 'tel' %}
+    <a href="{{ prefix }}:{{ value }}" rel="nofollow noopener noreferrer"
+       class="text-{{ text_color }} my-auto" target="_blank">
+        {{ content|raw }}
+    </a>
+
+{% elseif item.type is same as ('link') %}
+    <a href="{{ value }}" rel="nofollow noopener noreferrer"
+       class="text-{{ text_color }} my-auto" target="_blank">
+        {{ content|raw }}
+    </a>
+{% else %}
+    {{ content|raw }}
+{% endif %}
+

@@ -1,0 +1,19 @@
+{% for magazine in magazines %}
+    <div class="col-3 col-sm-2 col-md-1 col-lg-4 pagination-item">
+        <div class="magazine-item position-relative{% if get_id(magazine) == get_id(current_magazine) %} active{% endif %}{% if not is_mobile %} on-hover{% endif %}">
+            {% include get_cover_template('common/post/thumbnail') with {
+                post: magazine,
+                image_size: 'small',
+                image_attr: {class: 'w-100'}
+            } %}
+            <a href="{{ get_permalink(magazine)|esc_url }}"
+               title="{{ render_post_data('title', magazine)|esc_attr }}"
+               class="stretched-link"></a>
+            {% set number = render_post_data('issue_number', magazine) %}
+            <span class="w-100 h-100 show-fade text-center centered-absolute bg-overlay dark-50 d-flex justify-content-center flex-column text-white font-weight-bold{% if number > 999 %} fs-xl{% else %} fs-xxl{% endif %}">
+                {{ number|number|raw }}
+            </span>
+        </div>
+    </div>
+{% endfor %}
+

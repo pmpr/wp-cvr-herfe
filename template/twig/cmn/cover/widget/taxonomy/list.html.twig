@@ -1,0 +1,51 @@
+{% set id = id|default('taxonomy_widget')  %}
+{% if items is defined and items is not empty %}
+    {% if not child_iteration %}
+    <div class="mb-5">
+    {% endif %}
+        {% include get_cover_template('common/header/title') with {
+            heading: 'h3',
+            title_size: 'sm',
+            title_margin: 5,
+            large_title_size: 'md',
+        } %}
+        <ul id="{{ id }}" class="{% if child_iteration %}collapse pl-5{% else %}list-group list-group-flush{% endif %}">
+            {% for item in items %}
+                {% set has_children = hierarchical
+                    and item.children is defined
+                    and item.children is not empty %}
+                <li class="bg-transparent fs-sm font-weight-bold p-0{% if not child_iteration %} list-group-item{% endif %}">
+                    {% set item_padding = loop.first and not child_iteration ? 'pb-2' : (loop.last and not child_iteration ? 'pt-2' : 'py-2') %}
+                    {% if collapsible %}
+                    <div class="d-flex justify-content-between as-link rotate-180 collapsed {{ item_padding|esc_attr }}" data-toggle="collapse" data-target="#term_{{ item.term_id }}">
+                    {% endif %}
+                        <a href="{{ get_term_link(item)|esc_url }}" class="text-primary-secondary{% if not collapsible %} {{ item_padding|esc_attr }}{% endif %}" rel="nofollow">
+                            {{ item.name|raw }}
+                            {% if show_count %}
+                                <span class="ml-1">({{ item.count|short_number|number|raw }})</span>
+                            {% endif %}
+                        </a>
+                    {% if collapsible %}
+                        {% if has_children %}
+                            {{ render_icon('fontawesome/angle-up', {class: 'icon-primary'}) }}
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    {% if has_children  %}
+
+                        {% include _self with {
+                            id: 'term_' ~ item.term_id,
+                            title: '',
+                            items: item.children,
+                            child_iteration: 1,
+                        } %}
+
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% if not child_iteration %}
+        <div class="mb-5">
+    {% endif %}
+{% endif %}
+

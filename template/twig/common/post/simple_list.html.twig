@@ -1,0 +1,18 @@
+{% if items is not empty %}
+    {% include get_cover_template('common/header/title') with {
+        heading: 'h3',
+        title_size: 'sm',
+        title_margin: 5,
+        large_title_size: 'md',
+    } %}
+    <ul class="list-group list-group-flush">
+        {% for item in items %}
+            <li class="list-group-item border-0 p-0 mb-2 bg-transparent{% if not loop.last %} mb-1{% endif %}">
+                <a href="{{ get_permalink(item)|esc_attr }}" rel="nofollow" class="as-link text-white-secondary">
+                    {{ render_post_data('title', item) }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+

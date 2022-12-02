@@ -1,0 +1,34 @@
+{% extends get_cover_template('sidebarable') %}
+
+{% set advertiser = pmpr_apply_filters('get_advertiser_post_data', [], {post: post}) %}
+
+{% block content %}
+
+    <div class="d-flex">
+        {% include get_cover_template('common/header/index') with {
+            has_container: 0
+        } %}
+        {{ pmpr_do_action('browser_render', {
+            items: advertiser.galleries
+        }) }}
+    </div>
+
+
+    {% include get_template('../event/list', _self) with {
+        events: advertiser.events,
+        pagination_args: advertiser.pagination_args,
+    } %}
+
+    {% include get_template('../content', _self) with {
+        more_information_title: advertiser.more_information_title
+    }  %}
+{% endblock %}
+
+{% block sidebar %}
+
+    {{ parent() }}
+    {% include get_template('../sidebar', _self) with {
+        object: advertiser
+    } %}
+{% endblock %}
+

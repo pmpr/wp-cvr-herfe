@@ -1,0 +1,13 @@
+{% extends get_cover_template('sidebarable') %}
+
+{% block content %}
+
+    {% include get_cover_template('common/single/index') %}
+
+{% endblock %}
+
+{% block sidebar %}
+    {{ parent() }}
+    {% include get_cover_template('common/single/widget') %}
+{% endblock %}
+

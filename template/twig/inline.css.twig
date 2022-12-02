@@ -1,0 +1,13 @@
+{% set more_less = get_cover_option('more_less', {}) %}
+{% if more_less.enable %}
+
+.more-less:not(.show-more) {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    line-clamp: {{ more_less.line|raw }};
+    -webkit-line-clamp: {{ more_less.line|raw }};
+}
+
+{% endif %}

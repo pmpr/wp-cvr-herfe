@@ -1,0 +1,36 @@
+{% extends get_cover_template('sidebarable') %}
+
+{% set event = pmpr_apply_filters('get_event_post_data', [], {post: post}) %}
+
+{% block content %}
+
+    {% include get_cover_template('common/single/index') %}
+
+{% endblock %}
+
+{% block sidebar %}
+    {{ parent() }}
+
+    {% if event.contact_information is not empty %}
+        <div class="my-5">
+            {% include get_cover_template('common/header/title') with {
+                title: event.contact_information_title,
+                heading: 'h3',
+                title_size: 'sm',
+                title_margin: 5,
+            } %}
+
+            {% include get_cover_template('common/contacts/items') with {
+                items: event.contact_information,
+                show_icon: 1,
+                icon_size: 'lg',
+                icon_color: 'primary',
+                text_color: 'primary-secondary'
+            } %}
+        </div>
+    {% endif %}
+
+    {{ dynamic_sidebar('single-sidebar') }}
+    {{ dynamic_sidebar(post_type ~ '-single-sidebar') }}
+{% endblock %}
+

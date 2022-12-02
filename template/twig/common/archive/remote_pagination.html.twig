@@ -1,0 +1,20 @@
+<div class="position-relative remote-pagination mb-5 mb-lg-0">
+    {{ render_spinner() }}
+    <div class="row {{ type|esc_attr }}-list pagination-list{% if list_container_class is defined and list_container_class is not empty %} {{ list_container_class|esc_attr }}{% endif %}">
+        {% block list %}{% endblock %}
+        {% set pagination = pagination|default(pmpr_apply_filters(type ~ '_pagination_info', [])) %}
+
+        <nav data-type="{{ type|esc_attr }}"
+             data-action="{{ action|esc_attr }}"
+             data-page="{{ pagination.page|esc_attr }}"
+             data-pages="{{ pagination.pages|esc_attr }}"
+             data-extra="{{ extra|default({})|json_encode }}"
+             class="col-12 d-flex justify-content-between mt-5 pagination-control">
+
+            <a href="#" class="btn btn-primary bg-primary-secondary prev">{{ prev_text|default(__('Prev', domain)) }}</a>
+            <a href="#" class="btn btn-primary bg-primary-secondary next">{{ next_text|default(__('Next', domain)) }}</a>
+
+        </nav>
+    </div>
+</div>
+

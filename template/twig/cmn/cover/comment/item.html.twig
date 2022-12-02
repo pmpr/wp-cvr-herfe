@@ -1,0 +1,22 @@
+<li class="bg-transparent comment-list-item{% if depth > 1 %} comment-child{% endif %}"
+    id="comment-{{ id|esc_attr }}" data-page="{{ page }}">
+    <article data-id="{{ id|esc_attr }}" {{ comment_class(['d-flex w-100 p-4'], id) }}>
+        {{ get_avatar(comment, avatar_size, {class: 'avatar-img rounded-circle mx-auto'})|raw }}
+        <div id="comment-{{ id|esc_attr }}-content" class="comment-content w-100 ml-4">
+            <span class="h6 mb-0 text-primary author-title">{{ get_comment_author(id)|raw }}</span>
+            <time class="text-muted fs-xs ml-2"
+                  datetime="{{ comment.comment_date|date('Y-m-d')|esc_attr }}">
+                {{ get_comment_date()|datetime|raw }}
+            </time>
+            {% if not comment.comment_approved %}
+                <p class="d-inline mb-0 ml-2 text-warning fs-xs">{{ args.comment_waiting_text|raw }}</p>
+            {% endif %}
+            <p class="fs-sm my-3">{{ text|raw }}</p>
+            {{ get_comment_reply_link({
+                depth: depth,
+                max_depth: max_depth,
+                reply_text: __('Reply', domain),
+            }, comment, post)|raw }}
+        </div>
+    </article>
+

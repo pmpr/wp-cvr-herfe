@@ -1,0 +1,17 @@
+{% block header %}
+    {{ pmpr_do_action('render_header') }}
+{% endblock %}
+
+{% set has_main = has_main|default(1) %}
+{% if has_main %}
+<main class="main{% if main_class is defined and main_class is not empty %} {{ main_class|esc_attr }}{% endif %}">
+{% endif %}
+    {% block body %}{% endblock %}
+{% if has_main %}
+</main>
+{% endif %}
+
+{% block footer %}
+    {{ pmpr_do_action('render_footer') }}
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% if items is not empty %}
+    {% include get_cover_template('common/header/title') with {
+        heading: 'h3',
+        title_size: 'sm',
+        title_margin: 5,
+        large_title_size: 'md',
+    } %}
+    {% for item in items %}
+        <article class="d-flex{% if not loop.last %} mb-4{% endif %}">
+            {% include get_template('./thumbnail', _self) with {
+                image_size: 'small',
+                has_figure: 0,
+                post: item,
+            } %}
+            <div class="mx-3 my-auto">
+                {% set title = get_title(item) %}
+                <a href="{{ get_permalink(item)|esc_url }}"
+                   title="{{ title|esc_attr }}" aria-label="{{ title|esc_attr }}">
+                    <h4 class="fs-sm lh-xl max-line max-line-2 text-primary-secondary">{{ title|raw }}</h4>
+                </a>
+            </div>
+        </article>
+    {% endfor %}
+{% endif %}

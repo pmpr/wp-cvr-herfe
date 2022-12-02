@@ -1,0 +1,27 @@
+{% if items is defined
+    and items is not empty %}
+
+    <div class="d-flex">
+        {% for item in items %}
+            {% if item.markup is not empty %}
+                {{ item.markup|raw }}
+            {% else %}
+                <a href="{{ item.link|esc_attr }}"
+                   class="d-block mr-4"
+                   title="{{ item.title|esc_attr }}">
+                    {% if item.image_id is not empty %}
+                        {% if item.image_size is not empty %}
+
+                            {{ wp_get_attachment_image(item.image_id, item.image_size)|raw }}
+                        {% else %}
+                            <img alt="{{ get_title(item.image_id)|esc_attr }}"
+                                 src="{{ wp_get_attachment_url(item.image_id)|esc_url }}"
+                                 width="{{ item.width|esc_attr }}" height="{{ item.height|esc_attr }}">
+                        {% endif %}
+                    {% endif %}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+{% endif %}

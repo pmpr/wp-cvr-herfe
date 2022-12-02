@@ -1,0 +1,17 @@
+{% set magazines = pmpr_apply_filters('get_magazine_posts', []) %}
+{% set current_magazine  = pmpr_apply_filters('get_current_magazine', 0) %}
+{% if magazines is not empty %}
+
+    {% embed get_cover_template('common/archive/remote_pagination') with {
+        type: 'magazine',
+        action: 'ajax_get_magazines',
+        prev_text: __('Prev Issues', domain),
+        next_text: __('Next Issues', domain),
+        extra: {current: get_id(current_magazine)},
+        list_container_class: 'gutter-1'
+    } %}
+        {% block list %}
+            {% include get_template('./magazine_items', _self) %}
+        {% endblock %}
+    {% endembed %}
+{% endif %}

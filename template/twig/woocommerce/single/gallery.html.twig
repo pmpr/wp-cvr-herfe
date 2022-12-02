@@ -1,0 +1,49 @@
+{% if main_images and thumbnails %}
+
+    {% embed get_cover_template('common/carousel/carousel') with {
+        carousel_config: {
+            fade: false,
+            arrows: false,
+            asNavFor: '.nav-thumbnail-carousel',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true
+        },
+        carousels: main_images,
+        carousel_class: 'main-image-carousel'
+    } %}
+
+        {% block carousel %}
+            {{ carousel|raw }}
+        {% endblock %}
+    {% endembed %}
+
+    <div class="carousel-container mt-5 on-hover">
+
+        {% set slidesToShow = 4 %}
+        {% set arrows = thumbnails|length > slidesToShow %}
+        {% embed get_cover_template('common/carousel/carousel') with {
+            carousel_config: {
+                dots: false,
+                arrows: arrows,
+                asNavFor: '.main-image-carousel',
+                slidesToShow: slidesToShow,
+                slidesToScroll: slidesToShow / 2,
+                focusOnSelect: true,
+            },
+            carousels: thumbnails,
+            arrow_class: 'position-absolute p-1',
+            arrows_class: 'centered-absolute w-100 top-30 show-fade',
+            carousel_class: 'nav-carousel nav-thumbnail-carousel',
+            next_class: 'right-0',
+            prev_class: 'left-0',
+        } %}
+
+            {% block carousel %}
+                {{ carousel|raw }}
+            {% endblock %}
+        {% endembed %}
+
+    </div>
+
+{% endif %}

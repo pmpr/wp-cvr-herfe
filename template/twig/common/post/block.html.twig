@@ -1,0 +1,21 @@
+{% set title = get_title(post) %}
+{% set post_type = render_post_data('type', post) %}
+{% set heading_element = heading_element|default('h2') %}
+
+{% set columns = 'col-12 col-md-6 col-lg-' ~ lg_col|default(3) %}
+<article class="block-{{ post_type.name|esc_attr }} position-relative{% if post_type.name is same as('english_article') %} direction-ltr text-right{% endif %} {{ columns|esc_attr }} {{ card_bottom_margin(loop, columns, 5)|esc_attr }}">
+    {% include get_template('./thumbnail', _self) with {
+        image_size: is_mobile ? 'medium_mobile' : 'medium',
+        image_attr: {class: 'w-100'}
+    } %}
+    <a href="{{ get_permalink(post)|esc_url }}" aria-label="{{ title|esc_attr }}" title="{{ title|esc_attr }}" class="stretched-link"></a>
+    <div class="position-relative">
+        <{{ heading_element|raw }} class="fs-sm font-weight-normal lh-xl text-white max-line max-line-2 p-3 mb-0 w-100 h-72 position-absolute bottom-0 bg-overlay dark-80">
+            {{ title|raw }}
+        </{{ heading_element|raw }}>
+    </div>
+    {% if show_type|default(0) %}
+        <span class="position-absolute top-0 left-0 text-white bg-secondary px-5 py-1 ml-5 mt-3">{{ post_type.labels.singular_name|raw }}</span>
+    {% endif %}
+</article>
+

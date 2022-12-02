@@ -1,0 +1,9 @@
+<div class="container">
+    {% set is_monile = is_mobile() %}
+    <a class="d-block" href="{{ link|esc_attr }}" target="_blank"
+       title="{{ title|esc_attr }}" aria-label="{{ title|esc_attr }}"
+       rel="nofollow noopener noreferrer">
+        {{ wp_get_attachment_image(is_mobile ? mobile_image : desktop_image , is_mobile ? 'medium_mobile' : 'full', {class: 'w-100'})|raw }}
+    </a>
+</div>
+

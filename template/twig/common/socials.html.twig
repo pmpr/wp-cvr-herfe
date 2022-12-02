@@ -1,0 +1,14 @@
+{% if text %}
+    <h3 class="my-auto mr-1 text-dark">{{ text|raw }}</h3>
+{% endif %}
+{% if socials is not empty %}
+    {% for social in socials %}
+        <a href="{{ social.esc_url|esc_attr }}"
+           title="{{ social.title|esc_attr }}"
+           class="mr-3 hover-transient bg-white-primary"
+           rel="noopener noreferrer nofollow" target="_blank">
+            {{ render_icon(social.icon, {class: 'svg-icon icon-' ~ icon_size|default('lg') ~ ' hover-transient icon-primary icon-hover-white '}) }}
+        </a>
+    {% endfor %}
+{% endif %}
+

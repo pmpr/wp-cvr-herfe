@@ -1,0 +1,19 @@
+{% if items is defined and items is not empty %}
+    <div class="mb-5">
+        {% include get_cover_template('common/header/title') with {
+            heading: 'h3',
+            title_size: 'sm',
+            title_margin: 5,
+            large_title_size: 'md',
+        } %}
+        {% for item in items %}
+            <a href="{{ get_term_link(item)|raw }}" rel="tag" class="badge badge-light font-weight-bold fs-sm mb-1">
+                {{ item.name|raw }}
+                {% if show_count %}
+                    <span class="ml-1">({{ item.count|short_number|number|raw }})</span>
+                {% endif %}
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
+

@@ -1,0 +1,23 @@
+{% if posts is defined
+    and posts is not empty %}
+
+    <div class="row my-{{ list_container_margin|default(6) }}">
+
+        {% for index, post in posts %}
+
+            {% include get_cover_template('common/post/block') with {
+                loop: loop,
+            } %}
+
+        {% endfor %}
+
+    </div>
+
+    {% include get_template('./pagination', _self) %}
+
+{% else %}
+
+    {% include get_template('./empty', _self) %}
+
+{% endif %}
+

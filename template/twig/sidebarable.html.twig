@@ -1,0 +1,18 @@
+{# disable main block to overwite inside row #}
+{% set has_main = 0 %}
+
+{% extends get_template('./container', _self) %}
+
+{% block inside_container %}
+    {% block before_row %}{% endblock %}
+    <div class="row{% if row_class|default('') is not empty %} {{ row_class|esc_attr }}{% endif %}">
+        <main class="col-lg-9 mb-5 mb-lg-0 order-2">
+            {% block content %}{% endblock %}
+        </main>
+        <aside class="col-lg-3{% if sidebar_first|default(0) %} order-1{% else %} order-3{% endif %}">
+            {% block sidebar %}{% endblock %}
+        </aside>
+        {% block after_columns %}{% endblock %}
+    </div>
+    {% block after_row %}{% endblock %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% set main_class = 'direction-ltr text-right' %}
+{% extends get_cover_template('container') %}
+
+{% block before_container %}
+    {{ parent() }}
+    {% include get_cover_template('common/header/index') %}
+{% endblock %}
+
+{% block inside_container %}
+    {% include get_cover_template('common/archive/content') with {
+        posts: have_posts()
+    } %}
+{% endblock %}
+

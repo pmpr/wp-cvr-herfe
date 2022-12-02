@@ -1,0 +1,35 @@
+{% set row_class = 'mb-6' %}
+{% set sidebar_first = 1 %}
+{% extends get_cover_template('sidebarable') %}
+
+{% block sidebar %}
+    {{ parent() }}
+    {% include get_template('../../magazines', _self) %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="d-flex">
+
+        {% include get_cover_template('common/header/index') with {
+            has_container: 0,
+            title_attrs: {class: 'text-nowrap'}
+        } %}
+
+        {{ pmpr_do_action('browser_render', {
+            items: pmpr_apply_filters('magazine_archive_browser_items', []),
+            taxonomy: 'medium'
+        }) }}
+
+    </div>
+
+    {% if excerpt is not empty %}
+        <div class="my-6">{{ wpautop(excerpt)|raw }}</div>
+    {% endif %}
+
+    {% include get_cover_template('common/archive/content') with {
+        posts: have_posts(),
+        lg_col: 4,
+    } %}
+{% endblock %}
+

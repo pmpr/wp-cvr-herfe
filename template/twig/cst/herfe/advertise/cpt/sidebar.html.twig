@@ -1,0 +1,43 @@
+<div class="position-sticky top-55">
+    {{ wp_get_attachment_image(object.logo_id, 'thumbnail', {class: 'mx-auto d-block'})|raw }}
+
+    {% if object.contact_information is not empty %}
+        <div class="my-5">
+
+            {% include get_cover_template('common/header/title') with {
+                title: object.contact_information_title,
+                heading: 'h3',
+                title_size: 'sm',
+                title_margin: 5
+            } %}
+
+            {% include get_cover_template('common/contacts/items') with {
+                items: object.contact_information,
+                show_icon: 1,
+                icon_size: 'lg',
+                icon_color: 'primary',
+                text_color: 'primary-secondary'
+            } %}
+        </div>
+    {% endif %}
+
+    {% if object.social_accounts is not empty %}
+        <div class="my-5">
+
+            {% include get_cover_template('common/header/title') with {
+                title: object.social_accounts_title,
+                heading: 'h3',
+                title_size: 'sm',
+                title_margin: 5
+            } %}
+
+            <div class="d-flex">
+                {% include get_cover_template('common/socials') with {
+                    socials: object.social_accounts,
+                    icon_size: 'xl'
+                } %}
+            </div>
+        </div>
+    {% endif %}
+</div>
+

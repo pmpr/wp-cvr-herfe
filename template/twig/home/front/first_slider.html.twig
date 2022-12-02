@@ -1,0 +1,59 @@
+{% extends get_cover_template('common/carousel/carousel') %}
+
+{% set carousel_class = 'full-width animated-carousel front-first-slider max-vh-100' %}
+{% set container_class = 'overflow-hidden max-vh-100' %}
+
+{% set carousel_config = {
+    fade: true,
+    loop: true,
+    dots: true,
+    speed: 1000,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 8000000,
+    variableWidth: false,
+    adaptiveHeight: false
+} %}
+
+{% block before_slides %}
+    <div {{ add_animation({class: 'position-absolute right-0 top-0 z-index-1 bg-white', id: 'carousel_logo'}, 'fadeInDown', 1, 1, 1)|raw }}>
+        {% set logo_size = is_mobile() ? 120 : 180 %}
+        {% include get_cover_template('common/logo') with {
+            width: logo_size,
+            height: logo_size,
+            has_link: 0,
+            option_key: 'large_logo'
+        } %}
+    </div>
+{% endblock %}
+
+{% block carousel %}
+    {% embed get_cover_template('common/background_media') with {
+        image_url: wp_get_attachment_image_url(carousel.image),
+        container_class: 'image-cover carousel-item min-vh-100',
+    } %}
+        {% block body %}
+            {% set common_class = 'highlight-text white-primary font-weight-bold px-1 d-table' %}
+            <article class="carousel-item-content">
+                {% if carousel.button is empty %}
+                    <a href="{{ carousel.permalink|esc_url }}" title="{{ carousel.title|esc_attr }}"
+                       class="stretched-link"{% if carousel.external_link %} rel="noopener noreferrer nofollow" target="_blank"{% endif %}></a>
+                {% endif %}
+                <div class="container pt-20 mt-lg-40 pt-lg-40 centered-absolute">
+                    <h3 {{ add_animation({class: common_class ~ ' fs-lg fs-md-xxl mb-1'}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
+                    {% if carousel.text is not empty %}
+                        <p {{ add_animation({class: common_class ~ ' lh-lg fs-md fs-md-lg mb-4'}, 'fadeInLeft', 3.5, 1, loop.first) }}>{{ carousel.text|raw }}</p>
+                    {% endif %}
+                    {% if carousel.subtext is not empty %}
+                        <p {{ add_animation({class: common_class ~ ' lh-lg fs-sm fs-md-md mb-4'}, 'fadeInLeft', 5, 1, loop.first) }}>{{ carousel.subtext|raw }}</p>
+                    {% endif %}
+                    {% if carousel.button is not empty %}
+                        <a {{ add_animation({class: 'btn btn-lg main-action'}, 'fadeInLeft', 6.5, 1, loop.first) }}>{{ carousel.button|raw }}</a>
+                    {% endif %}
+                </div>
+            </article>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

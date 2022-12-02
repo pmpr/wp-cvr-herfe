@@ -1,0 +1,22 @@
+<div class="pt-6 pt-md-8 more-information">
+
+    {% include get_cover_template('common/header/title') with {
+        title: more_information_title,
+        heading: 'h2',
+        title_size: 'sm',
+        title_margin: 5,
+        large_title_size: 'md',
+        title_attrs: add_animation({}, 'fadeInLeft', 0.1, 0),
+    } %}
+
+    {% include get_cover_template('common/post/thumbnail') with {
+        image_size: is_mobile ? 'medium_mobile' : 'thumbnail',
+        image_attr: is_mobile ? {class: 'w-100'} : {},
+        figure_class: 'float-left mr-6'
+    } %}
+
+    {% include get_cover_template('common/single/content') with {
+        content_class: 'my-0'
+    } %}
+</div>
+

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        {% for post in posts %}
+            {% include get_cover_template('common/post/block') with {
+                post: post,
+                loop: loop,
+                heading_element: 'h3'
+            } %}
+        {% endfor %}
+    </div>
+</div>

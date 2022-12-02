@@ -1,0 +1,8 @@
+<div class="nav-bar d-none d-lg-flex" id="navbar">
+    {% include get_cover_template('common/logo') with {
+        option_key: 'desktop_logo',
+        container_class: 'd-none d-lg-block mr-3',
+    } %}
+    {{ wp_nav_menu({theme_location:'desktop-menu'}) }}
+</div>
+

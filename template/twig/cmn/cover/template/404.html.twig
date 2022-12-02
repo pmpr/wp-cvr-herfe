@@ -1,0 +1,27 @@
+{% if image is not empty %}
+    {{ wp_get_attachment_image(image, 'medium')|raw }}
+{% endif %}
+
+{% if title is not empty %}
+    <h1 class="h3 mb-5">{{ title|raw }}</h1>
+{% endif %}
+
+{% if text is not empty %}
+    <p class="text-muted mb-5">{{ text|raw }}</p>
+{% endif %}
+
+{% if has_search %}
+    <div class="my-6">
+        {{ get_search_form()|raw }}
+    </div>
+{% endif %}
+
+{% if url is defined %}
+    <div class="my-6">
+        {% include get_cover_template('common/call_to_action') with {
+            icon: action_icon,
+            text: action_text,
+            permalink: url,
+        } %}
+    </div>
+{% endif %}

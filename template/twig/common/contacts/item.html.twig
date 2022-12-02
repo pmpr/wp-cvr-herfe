@@ -1,0 +1,23 @@
+{% if value is not empty %}
+    <div class="{{ item_holder_class|default('d-flex justify-content-between') }}">
+        {% if show_icon %}
+            <div class="d-flex">
+                {{ render_icon(icon, {class: 'icon-centered icon-' ~ icon_size|default('lg') ~  ' icon-' ~ icon_color|default('white')}) }}
+                <span class="ml-2">{{ title|raw }}:</span>
+            </div>
+        {% else %}
+            <span>{{ title|raw }}:</span>
+        {% endif %}
+        {% if value is iterable %}
+            {% for val in value %}
+                {% include get_template('value', _self) %}
+                {% if not loop.last %}
+                    <span class="mx-2 my-auto d-none d-sm-block">|</span>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% include get_template('value', _self) %}
+        {% endif %}
+    </div>
+{% endif %}
+

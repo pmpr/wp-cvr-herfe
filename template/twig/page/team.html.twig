@@ -1,0 +1,32 @@
+{% extends get_template('./about', _self) %}
+
+{% block after_page_content %}
+
+    {% set options = get_cover_option('team_page', {}) %}
+
+    {% if options.sections is defined
+        and options.sections is not empty %}
+
+        {% for section in options.sections %}
+            <section class="my-6 members">
+                <h2 class="mb-5 fs-md">{{ section.title|raw }}</h2>
+                <div class="row">
+                    {% for member in section.members %}
+                        <div class="col-12 col-md-6 mb-5 member">
+                            <article class="card{% if member.active %} member-active{% endif %}">
+                                <div class="card-body d-flex">
+                                    {{ wp_get_attachment_image(member.image_id, 'small', {class: 'mr-3 my-auto'})|raw }}
+                                    <div class="no-margin member-info">
+                                        <h3 class="fs-sm mb-1">{{ member.name|raw }}</h3>
+                                        <p>{{ member.title|raw }}</p>
+                                        <small class="fs-xs">{{ member.history|raw }}</small>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

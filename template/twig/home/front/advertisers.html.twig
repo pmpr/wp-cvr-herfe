@@ -1,0 +1,16 @@
+{% set image_size = 'thumbnail' %}
+<div class="container">
+    <div class="row">
+        {% for item in items %}
+            <article class="col-6 col-md-4 col-lg-2 mb-5">
+                <a href="{{ item.permalink|esc_url }}" class="d-block on-hover{% if is_mobile %} active{% endif %} position-relative overflow-hidden">
+                    {{ wp_get_attachment_image(item.first_image, image_size, {class: 'w-100'})|raw }}
+                    <div class="position-absolute w-100 top-0 left-0 show-fade">
+                        {{ wp_get_attachment_image(item.second_image, image_size, {class: 'w-100'})|raw }}
+                        <h3 class="fs-xs p-2 m-0 bg-overlay dark-80 max-line max-line-2 text-white move-up">{{ item.title|raw }}</h3>
+                    </div>
+                </a>
+            </article>
+        {% endfor %}
+    </div>
+</div>

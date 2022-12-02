@@ -1,0 +1,16 @@
+<div class="my-6">
+    <h3 class="border-bottom h4">
+        <span class="ml-1 text-secondary">{{ count|raw }}</span>
+        {{ title|raw }}
+    </h3>
+    {% if not has_comment %}
+        <p class="fs-sm my-3">{{ empty_message|raw }}</p>
+    {% endif -%}
+    <ul id="comment_list" class="list-unstyled mb-0 comments-list{% if not has_comment %} done{% endif %}">
+        {% if has_comment %}
+            {{ comments|raw }}
+        {% endif %}
+    </ul>
+    {{ pagination|raw }}
+</div>
+

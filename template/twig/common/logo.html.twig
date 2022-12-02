@@ -1,0 +1,13 @@
+{% set has_link = has_link|default(1) %}
+{% set logo = logo|default(customizer_option(option_key)) %}
+{% if has_link %}
+    <a href="{{ home_url()|esc_attr }}" class="{{ container_class|esc_attr }}">
+{% endif %}
+    <img src="{{ logo|esc_attr }}"
+         width="{{ width|default(48) }}"
+         height="{{ height|default(48) }}"
+         alt="site logo"/>
+{% if has_link %}
+    </a>
+{% endif %}
+

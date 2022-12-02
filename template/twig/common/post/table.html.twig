@@ -1,0 +1,28 @@
+{% if items is defined
+    and items is not empty %}
+
+    {% include get_cover_template('common/header/title') with {
+        heading: 'h3',
+        title_size: 'sm',
+        title_margin: 5,
+        large_title_size: 'md',
+    } %}
+
+    <table class="table mb-0 bg-transparent">
+        <tbody>
+        {% for item in items %}
+            <tr class="bg-transparent">
+                <td class="py-2 px-0{% if loop.first %} border-0{% endif %}">
+                    {% set title = render_post_data('title', item) %}
+                    <a href="{{ get_permalink(item)|esc_url }}" title="{{ title|esc_attr }}"
+                       aria-label="{{ title|esc_attr }}">
+                        <h4 class="h6 mb-0 lh-lg max-line max-line-1 text-primary-secondary">
+                            {{ get_title(item)|raw }}
+                        </h4>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

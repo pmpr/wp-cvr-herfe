@@ -1,0 +1,18 @@
+{% if pmpr_apply_filters('has_footer', 1) %}
+
+    <footer id="site_footer" class="bg-primary text-white mt-6 mt-md-8">
+        <div class="container">
+            <div class="px-8 px-md-0">
+                {% include get_template('top', _self) %}
+                {% include get_template('bottom', _self) %}
+            </div>
+        </div>
+    </footer>
+
+{% endif %}
+
+{{ wp_footer()|raw }}
+
+</body>
+</html>
+

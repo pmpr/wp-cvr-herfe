@@ -1,0 +1,39 @@
+{% extends get_template('container', _self) %}
+
+{% block before_container %}
+    {{ parent() }}
+    {% include get_cover_template('common/header/index') %}
+    <div class="my-6 bg-gray-2">
+        <div class="container py-10">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    {{ get_search_form()|raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block inside_container %}
+    {% set posts = have_posts() %}
+
+    {% if posts %}
+
+        <div class="row my-6">
+            {% for index, post in posts %}
+
+                {% include get_cover_template('common/post/block') with {
+                    post: post,
+                    loop: loop,
+                    show_type: 1
+                } %}
+            {% endfor %}
+        </div>
+
+        {% include get_cover_template('common/archive/pagination') %}
+    {% else %}
+
+        {% include get_cover_template('common/archive/empty') %}
+    {% endif %}
+
+{% endblock %}
