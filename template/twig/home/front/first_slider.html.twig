@@ -41,7 +41,7 @@
                     <a href="{{ carousel.permalink|esc_url }}" title="{{ carousel.title|esc_attr }}"
                        class="stretched-link"{% if carousel.external_link %} rel="noopener noreferrer nofollow" target="_blank"{% endif %}></a>
                 {% endif %}
-                <div class="container pt-20 mt-lg-40 pt-lg-40 centered-absolute">
+                <div class="container centered-absolute top-75">
                     <h3 {{ add_animation({class: common_class ~ ' fs-lg fs-md-xxl mb-1'}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
                     {% if carousel.text is not empty %}
                         <p {{ add_animation({class: common_class ~ ' lh-lg fs-md fs-md-lg mb-4'}, 'fadeInLeft', 3.5, 1, loop.first) }}>{{ carousel.text|raw }}</p>
