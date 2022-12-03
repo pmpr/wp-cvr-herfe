@@ -1,8 +1,6 @@
 {% set has_container = has_container|default(1) %}
 {% if jumbotron is defined and jumbotron is not empty %}
-    {% if has_container %}
-        <div class="container d-flex">
-    {% endif %}
+    <div class="d-flex{% if has_container %} container{% endif %}">
         {% include get_template('title', _self) with {
             title: jumbotron,
             title_size: 'md',
@@ -10,7 +8,10 @@
         } %}
         {{ pmpr_do_action('after_page_title', object) }}
         {% block after_title %}{% endblock %}
-    {% if has_container %}
-        </div>
-    {% endif %}
+    </div>
+    <div class="text-justify my-5{% if has_container %} container{% endif %}">
+        {% include get_template('description', _self) with {
+            description: excerpt
+        } %}
+    </div>
 {% endif %}

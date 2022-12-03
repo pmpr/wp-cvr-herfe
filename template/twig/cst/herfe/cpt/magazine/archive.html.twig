@@ -9,25 +9,17 @@
 
 {% block content %}
 
-    <div class="d-flex">
+    {% embed get_cover_template('common/header/index') with {
+        has_container: 0,
+        title_attrs: {class: 'text-nowrap'}
+    } %}
+        {% block after_title %}
+            {{ pmpr_do_action('browser_render', {
+                items: pmpr_apply_filters('magazine_archive_browser_items', []),
+                taxonomy: 'medium'
+            }) }}
+        {% endblock %}
+    {% endembed %}
 
-        {% include get_cover_template('common/header/index') with {
-            has_container: 0,
-            title_attrs: {class: 'text-nowrap'}
-        } %}
-
-        {{ pmpr_do_action('browser_render', {
-            items: pmpr_apply_filters('magazine_archive_browser_items', []),
-            taxonomy: 'medium'
-        }) }}
-
-    </div>
-
-    {% if archive_description is defined
-        and archive_description is not empty %}
-
-        <div class="my-6">{{ wpautop(archive_description)|raw }}</div>
-
-    {% endif %}
 {% endblock %}
 

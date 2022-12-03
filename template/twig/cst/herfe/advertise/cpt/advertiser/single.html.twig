@@ -4,15 +4,16 @@
 
 {% block content %}
 
-    <div class="d-flex">
-        {% include get_cover_template('common/header/index') with {
-            has_container: 0
-        } %}
-        {{ pmpr_do_action('browser_render', {
-            items: advertiser.galleries
-        }) }}
-    </div>
-
+    {% embed get_cover_template('common/header/index') with {
+        has_container: 0,
+        excerpt: '',
+    } %}
+        {% block after_title %}
+            {{ pmpr_do_action('browser_render', {
+                items: advertiser.galleries
+            }) }}
+        {% endblock %}
+    {% endembed %}
 
     {% include get_template('../event/list', _self) with {
         events: advertiser.events,
@@ -21,7 +22,7 @@
 
     {% include get_template('../content', _self) with {
         more_information_title: advertiser.more_information_title
-    }  %}
+    } %}
 {% endblock %}
 
 {% block sidebar %}

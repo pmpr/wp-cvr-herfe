@@ -5,17 +5,15 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 team">
 
-            <div class="d-flex">
-
-                {% include get_cover_template('common/header/index') with {
-                    has_container: 0
-                } %}
-
-                {{ pmpr_do_action('browser_render', {
-                    items: pages,
-                }) }}
-
-            </div>
+            {% embed get_cover_template('common/header/index') with {
+                has_container: 0
+            } %}
+                {% block after_title %}
+                    {{ pmpr_do_action('browser_render', {
+                        items: pages,
+                    }) }}
+                {% endblock %}
+            {% endembed %}
 
             {% include get_cover_template('common/single/content') %}
 

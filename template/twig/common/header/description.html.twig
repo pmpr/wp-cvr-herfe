@@ -1,0 +1,8 @@
+{% if more_less is defined and more_less %}
+    {% include get_cover_template('common/more_less') with {
+        content: wpautop(description),
+    } %}
+{% else %}
+    {{ wpautop(description)|raw }}
+{% endif %}
+
