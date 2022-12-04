@@ -3,7 +3,8 @@
     <div class="row {{ type|esc_attr }}-list pagination-list{% if list_container_class is defined and list_container_class is not empty %} {{ list_container_class|esc_attr }}{% endif %}">
         {% block list %}{% endblock %}
         {% set pagination = pagination|default(pmpr_apply_filters(type ~ '_pagination_info', [])) %}
-
+    </div>
+    <div class="row{% if list_container_class is defined and list_container_class is not empty %} {{ list_container_class|esc_attr }}{% endif %}">
         <nav data-type="{{ type|esc_attr }}"
              data-action="{{ action|esc_attr }}"
              data-page="{{ pagination.page|esc_attr }}"

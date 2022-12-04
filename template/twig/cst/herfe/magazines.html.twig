@@ -7,7 +7,7 @@
         action: 'ajax_get_magazines',
         prev_text: __('Prev Issues', domain),
         next_text: __('Next Issues', domain),
-        extra: {current: get_id(current_magazine)},
+        extra: {current: get_id(current_magazine), is_mobile: is_mobile ? 1 : 0},
         list_container_class: 'gutter-1'
     } %}
         {% block list %}
