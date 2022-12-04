@@ -1,6 +1,6 @@
 {% for magazine in magazines %}
     <div class="col-3 col-sm-2 col-md-1 col-lg-4 pagination-item">
-        <div class="magazine-item position-relative{% if get_id(magazine) == get_id(current_magazine) %} active{% endif %}{% if not is_mobile %} on-hover{% endif %}">
+        <div class="magazine-item position-relative{% if get_id(magazine) == get_id(current_magazine) %} active{% endif %}{% if not is_items_active %} on-hover{% endif %}">
             {% include get_cover_template('common/post/thumbnail') with {
                 post: magazine,
                 image_size: 'small',
