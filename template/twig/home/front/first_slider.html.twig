@@ -42,7 +42,9 @@
                        class="stretched-link"{% if carousel.external_link %} rel="noopener noreferrer nofollow" target="_blank"{% endif %}></a>
                 {% endif %}
                 <div class="container centered-absolute top-75">
-                    <h3 {{ add_animation({class: common_class ~ ' fs-lg fs-md-xxl mb-1'}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
+                    {% if carousel.title is not empty %}
+                        <h3 {{ add_animation({class: common_class ~ ' fs-lg fs-md-xxl mb-1'}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
+                    {% endif %}
                     {% if carousel.text is not empty %}
                         <p {{ add_animation({class: common_class ~ ' lh-lg fs-md fs-md-lg mb-4'}, 'fadeInLeft', 3.5, 1, loop.first) }}>{{ carousel.text|raw }}</p>
                     {% endif %}
