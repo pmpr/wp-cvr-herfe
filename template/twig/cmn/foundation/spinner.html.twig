@@ -1,4 +1,4 @@
-<div class="pr-spinner overlay dark-50 position-absolute w-100 h-100 z-index-3">
+<div class="pr-spinner w-100 h-100 z-index-3 position-absolute {% if overlay|default(1) %} overlay dark-50{% endif %}{% if not hide %} show{% endif %}">
     <div class="centered-absolute z-index-4">
         <span class="spinner-border" role="status" aria-hidden="true"></span>
     </div>

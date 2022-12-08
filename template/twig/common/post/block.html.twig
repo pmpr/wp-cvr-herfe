@@ -3,7 +3,7 @@
 {% set heading_element = heading_element|default('h2') %}
 
 {% set columns = 'col-12 col-md-6 col-lg-' ~ lg_col|default(3) %}
-<article class="block-{{ post_type.name|esc_attr }} position-relative{% if post_type.name is same as('english_article') %} direction-ltr text-right{% endif %} {{ columns|esc_attr }} {{ card_bottom_margin(loop, columns, 5)|esc_attr }}">
+<article class="block-{{ post_type.name|esc_attr }} position-relative{% if post_type.name is same as('english_article') %} direction-ltr-force text-right{% endif %} {{ columns|esc_attr }} {{ card_bottom_margin(loop, columns, 5)|esc_attr }}">
     {% include get_template('./thumbnail', _self) with {
         image_size: is_mobile ? 'medium_mobile' : 'medium',
         image_attr: {class: 'w-100'}
