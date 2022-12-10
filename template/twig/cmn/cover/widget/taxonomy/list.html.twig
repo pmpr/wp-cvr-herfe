@@ -21,7 +21,7 @@
                     {% if collapsible %}
                     <div class="d-flex justify-content-between as-link rotate-180 collapsed {{ item_padding|esc_attr }}" data-toggle="collapse" data-target="#term_{{ item.term_id }}">
                     {% endif %}
-                        <a href="{{ get_term_link(item)|esc_url }}" class="text-primary-secondary{% if not collapsible %} {{ item_padding|esc_attr }}{% endif %}" rel="nofollow">
+                        <a href="{{ get_term_link(item)|esc_url }}" class="as-link{% if not collapsible %} {{ item_padding|esc_attr }}{% endif %}" rel="nofollow">
                             {{ item.name|raw }}
                             {% if show_count %}
                                 <span class="ml-1">({{ item.count|number|raw }})</span>

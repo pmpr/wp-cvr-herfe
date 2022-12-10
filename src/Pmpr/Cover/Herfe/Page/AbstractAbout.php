@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6394982fe6c8d             |
+    |             63949c8dea05a             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Herfe\Page; abstract class AbstractAbout extends Common { public function __construct() { $this->isPrivate = false; $this->hasBreadcrumb = true; parent::__construct(); } public function rsysgcucogueguuk() : array { return [self::yusuiaeueqwieqqq => [About::symcgieuakksimmu()->kyqakacqeumicgag(), Team::symcgieuakksimmu()->kyqakacqeumicgag()]]; } }
