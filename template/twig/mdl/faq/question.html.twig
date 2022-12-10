@@ -4,7 +4,7 @@
                 data-target="#response-{{ question.id|esc_attr }}" aria-expanded="true"
                 aria-controls="response-{{ question.id|esc_attr }}">
             <span class="text-left font-weight-bold fs-xs fs-md-sm">{{ question.question|raw }}</span>
-            {{ render_icon('fontawesome/angle-up', {class: 'my-auto'}) }}
+            {{ render_icon('fasm/6/set/angle-up', {class: 'my-auto'}) }}
         </button>
     </h2>
     <div id="response-{{ question.id|esc_attr }}" class="collapse" aria-labelledby="question-{{ question.id|esc_attr }}"

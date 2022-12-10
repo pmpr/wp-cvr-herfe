@@ -7,7 +7,7 @@
 
 <a {% if attrs|default({}) is not empty %} {{ attrs|parse_attrs|raw }}{% endif %}>
     <span class="d-flex justify-content-center">
-        {{ render_icon(icon|default('fontawesome/arrow-right'), {class: 'my-auto icon-white'}) }}
+        {{ render_icon(icon|default('fasm/6/set/arrow-right'), {class: 'my-auto icon-white'}) }}
         <span class="ml-3">{{ text|raw }}</span>
     </span>
 </a>

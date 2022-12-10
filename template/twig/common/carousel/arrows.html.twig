@@ -3,9 +3,9 @@
     {% set btn_class = btn_class|default('') ~ ' bg-primary d-flex' %}
     {% set icon_attrs = {class: 'm-auto icon-white'} %}
     <a class="prev {{ btn_class }} {{ prev_class }}">
-        {{ render_icon('fontawesome/' ~ icon ~ '-right', icon_attrs, 1) }}
+        {{ render_icon('fasm/6/set/' ~ icon ~ '-right', icon_attrs, 1) }}
     </a>
     <a class="next {{ btn_class }} {{ next_class }}">
-        {{ render_icon('fontawesome/' ~ icon ~ '-left', icon_attrs, 1) }}
+        {{ render_icon('fasm/6/set/' ~ icon ~ '-left', icon_attrs, 1) }}
     </a>
 </div>

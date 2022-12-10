@@ -24,12 +24,12 @@
                         <a href="{{ get_term_link(item)|esc_url }}" class="text-primary-secondary{% if not collapsible %} {{ item_padding|esc_attr }}{% endif %}" rel="nofollow">
                             {{ item.name|raw }}
                             {% if show_count %}
-                                <span class="ml-1">({{ item.count|short_number|number|raw }})</span>
+                                <span class="ml-1">({{ item.count|number|raw }})</span>
                             {% endif %}
                         </a>
                     {% if collapsible %}
                         {% if has_children %}
-                            {{ render_icon('fontawesome/angle-up', {class: 'icon-primary'}) }}
+                            {{ render_icon('fasm/6/set/angle-up', {class: 'icon-primary'}) }}
                         {% endif %}
                     </div>
                     {% endif %}
