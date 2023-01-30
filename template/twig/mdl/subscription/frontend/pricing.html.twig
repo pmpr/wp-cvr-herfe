@@ -1,0 +1,54 @@
+{% extends get_cover_template('container') %}
+
+{% block before_container %}
+    <header class="container text-center my-10">
+        {{ render_if_has_content('h1', {}, title) }}
+        {{ render_if_has_content('div', {}, wpautop(description)) }}
+    </header>
+{% endblock %}
+
+{% block inside_container %}
+
+    {% if plans is not empty %}
+
+        <div class="row">
+            {% for plan in plans %}
+                <div class="col-12 col-lg-4 mb-5">
+                    <article class="card border rounded-xs" style="min-height: 450px">
+                        <div class="card-body text-center">
+                            {{ render_if_has_content('h2', {class: 'h5 px-8 mt-5 centered-absolute top-0 ribbon ribbon-top'}, plan.display_title) }}
+                            {{ render_if_has_content('div', {class: 'mt-10'}, plan.price_html) }}
+                            {{ render_if_has_content('div', {class: 'h6 my-5 text-secondary'}, plan.period) }}
+
+                            {% if plan.features is not empty %}
+                                <div class="d-flex justify-content-center">
+                                    <ul class="list-group">
+                                        {% for feature in plan.features %}
+                                            {% if feature.text is not empty %}
+                                                <li class="list-group-item px-0 py-2 d-flex">
+                                                    {{ render_icon(feature_icon, {class: 'my-auto icon-success icon-md mr-2'}) }}
+                                                    <span class="my-auto">{{ feature.text|raw }}</span>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                            {% include get_cover_template('common/call_to_action') with {
+                                has_icon: 0,
+                                text: 'add to cart',
+                                permalink: plan.permalink,
+                                attrs: {class: ''}
+                            } %}
+                        </div>
+                    </article>
+                </div>
+            {% endfor %}
+        </div>
+
+    {% endif %}
+
+{% endblock %}
+

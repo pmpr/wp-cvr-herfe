@@ -1,14 +1,19 @@
 {% set size = size|default('lg') %}
 {% set attrs = attrs|default({}) %}
 {% set attrs = attrs|add('class', 'btn btn-' ~ size ~ ' btn-primary bg-primary-secondary px-6 py-3') %}
+{% set has_icon = has_icon|default(1) %}
 {% if permalink %}
     {% set attrs = attrs|add('href', permalink) %}
 {% endif %}
 
 <a {% if attrs|default({}) is not empty %} {{ attrs|parse_attrs|raw }}{% endif %}>
-    <span class="d-flex justify-content-center">
-        {{ render_icon(icon|default('fasm/6/set/arrow-right'), {class: 'my-auto icon-white'}) }}
-        <span class="ml-3">{{ text|raw }}</span>
-    </span>
+    {% if has_icon %}
+        <span class="d-flex justify-content-center">
+            {{ render_icon(icon|default('fasm/6/set/arrow-right'), {class: 'my-auto icon-white'}) }}
+            <span class="ml-3">{{ text|raw }}</span>
+        </span>
+    {% else %}
+        {{ text|raw }}
+    {% endif %}
 </a>
 
