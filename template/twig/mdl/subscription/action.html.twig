@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-end">
+    {% if key is same as ('library_view') %}
+        {% set classes = 'btn btn-light' %}
+    {% else %}
+        {% set classes = 'btn btn-lg my-3 px-8' %}
+        {% if key is same as('login') %}
+            {% set classes = classes ~ ' btn-primary ml-2' %}
+        {% elseif key is same as('register') %}
+            {% set classes = classes ~ ' btn-secondary ml-2' %}
+        {% elseif key is same as('pricing') %}
+            {% set classes = classes ~ ' btn-primary' %}
+        {% elseif key is same as('modal')
+            or key is same as('access') %}
+            {% set classes = classes ~ ' text-white bg-primary-secondary' %}
+        {% endif %}
+    {% endif %}
+
+    {% set attrs = attrs|add('class', classes) %}
+    {{ render_if_has_content('a', attrs, text) }}
+</div>
+

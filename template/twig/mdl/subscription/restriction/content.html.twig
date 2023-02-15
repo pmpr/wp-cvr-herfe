@@ -1,0 +1,9 @@
+<div class="text-center my-3">
+    {{ wpautop(message)|raw }}
+</div>
+<div class="d-flex justify-content-center">
+    {% for action in actions %}
+        {{ action|raw }}
+    {% endfor %}
+</div>
+

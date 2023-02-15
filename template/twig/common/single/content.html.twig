@@ -1,14 +1,9 @@
-
 {{ dynamic_sidebar('before-single-content') }}
 
-<div class="single-content text-justify {{ post_type|default('')|esc_attr }}-content {{ content_class|default('my-6')|raw }}">
-{{ the_content()|raw }}
-</div>
+{{ render_if_has_content('div', {class: 'single-content text-justify ' ~ post_type|default('') ~ '-content ' ~ content_class|default('my-6') }, the_content()) }}
 
 {{ dynamic_sidebar('after-single-contenet') }}
 
 {% if comments_open(post) %}
-    <div class="mb-5 mt-11">
-        {{ comments_template()|raw }}
-    </div>
+    {{ render_if_has_content('div', {class: 'mb-5 mt-11' }, comments_template()) }}
 {% endif %}
