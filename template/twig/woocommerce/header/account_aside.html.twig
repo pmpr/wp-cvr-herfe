@@ -18,7 +18,7 @@
     {% endblock %}
 
     {% block aside_content %}
-
+        {{ pmpr_do_action('woocommerce_before_mini_account_content') }}
         <ul class="list-group account-items list-group-flush bg-transparent pt-4">
             {% for key, item in links %}
                 <li class="list-group-item bg-transparent p-0 mb-2">
