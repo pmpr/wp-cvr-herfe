@@ -1,0 +1,7 @@
+{% if features is not empty %}
+    <ul class="pl-5 pt-3 m-0">
+        {% for feature in features %}
+            <li class="{% if not loop.last %}pb-2{% endif %}">{{ feature|raw }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
