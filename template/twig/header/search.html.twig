@@ -2,9 +2,9 @@
    data-target="#header_search_box"
    title="{{ button_text|esc_attr }}">{{ icon|raw }}</a>
 
-<div id="header_search_box" class="search-box-container overlay dark-50 z-index-2 position-fixed h-100 w-100 top-0 left-0">
+<div id="header_search_box" class="search-box-container overlay dark-90 z-index-2 position-fixed h-100 w-100 top-0 left-0">
     <div class="search-box-content centered-absolute mx-w-700 px-8 w-100 z-index-3">
-        {{ render_icon(close_icon, {class: 'icon-primary search-box-close d-block mb-5 as-link'}) }}
+        {{ render_icon(close_icon, {class: 'icon-white search-box-close d-block mb-5 as-link'}) }}
         {{ get_search_form()|raw }}
     </div>
 </div>

@@ -41,15 +41,15 @@
                     <a href="{{ carousel.permalink|esc_url }}" title="{{ carousel.title|esc_attr }}"
                        class="stretched-link"{% if carousel.external_link %} rel="noopener noreferrer nofollow" target="_blank"{% endif %}></a>
                 {% endif %}
-                <div class="container centered-absolute top-75">
+                <div class="container centered-absolute top-75 lh-md">
                     {% if carousel.title is not empty %}
-                        <h3 {{ add_animation({class: common_class ~ ' fs-lg fs-md-xxl mb-1'}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
+                        <h3 {{ add_animation({class: common_class ~ ' fs-lg mb-1'}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
                     {% endif %}
                     {% if carousel.text is not empty %}
-                        <p {{ add_animation({class: common_class ~ ' lh-lg fs-md fs-md-lg mb-4'}, 'fadeInLeft', 3.5, 1, loop.first) }}>{{ carousel.text|raw }}</p>
+                        <p {{ add_animation({class: common_class ~ ' fs-md mb-4'}, 'fadeInLeft', 3.5, 1, loop.first) }}>{{ carousel.text|raw }}</p>
                     {% endif %}
                     {% if carousel.subtext is not empty %}
-                        <p {{ add_animation({class: common_class ~ ' lh-lg fs-sm fs-md-md mb-4'}, 'fadeInLeft', 5, 1, loop.first) }}>{{ carousel.subtext|raw }}</p>
+                        <p {{ add_animation({class: common_class ~ ' fs-sm mb-4'}, 'fadeInLeft', 5, 1, loop.first) }}>{{ carousel.subtext|raw }}</p>
                     {% endif %}
                     {% if carousel.button is not empty %}
                         <a {{ add_animation({class: 'btn btn-lg main-action'}, 'fadeInLeft', 6.5, 1, loop.first) }}>{{ carousel.button|raw }}</a>

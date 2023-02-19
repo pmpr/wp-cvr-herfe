@@ -16,16 +16,16 @@
     {% for name in sections %}
         {% set options = get_cover_option(name, {}) %}
         {% if options.enable is defined and options.enable %}
-            <section{% if name is not same as('first_slider') %} class="my-8"{% endif %}>
+            <section{% if name is not same as('first_slider') %} class="my-7"{% endif %}>
                 {% if options.title is not empty %}
                     {% if options.hidden_title is not defined or not options.hidden_title %}
-                        <div class="container mb-4 mb-lg-8">
+                        <div class="container mb-4">
                             {% include get_cover_template('common/header/title') with {
                                 title: options.title,
                                 heading: 'h2',
                                 title_size: 'sm',
                                 title_attrs: add_animation({class: 'py-2 font-weight-normal'}, 'fadeInLeft', 0.1, 0),
-                                title_margin: 5,
+                                title_margin: 1,
                             } %}
                             {% if options.description is defined
                                 and options.description is not empty %}

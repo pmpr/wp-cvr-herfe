@@ -8,6 +8,8 @@
         has_container: 0
     } %}
 
+    {{ wp_get_attachment_image(gallery.logo_id, 'thumbnail', {class: 'mx-auto d-block d-lg-none'})|raw }}
+
     {% include get_template('../event/list', _self) with {
         events: gallery.events,
         pagination_args: gallery.pagination_args,

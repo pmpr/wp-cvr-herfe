@@ -15,6 +15,8 @@
         {% endblock %}
     {% endembed %}
 
+    {{ wp_get_attachment_image(advertiser.logo_id, 'thumbnail', {class: 'mx-auto d-block d-lg-none'})|raw }}
+
     {% include get_template('../event/list', _self) with {
         events: advertiser.events,
         pagination_args: advertiser.pagination_args,

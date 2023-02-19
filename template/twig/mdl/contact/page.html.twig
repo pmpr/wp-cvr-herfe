@@ -1,7 +1,7 @@
 {% set contact_page = get_cover_option('contact_page', {}) %}
 
 <div class="row">
-    <div class="order-lg-0 col-lg-6">
+    <div class="order-lg-0 col-lg-7 pr-lg-10">
         {{ render_if_has_content('div', {class: 'text-normal mb-5'}, content) }}
         {% if contact_page.contacts is not empty %}
             <div class="my-5">
@@ -49,10 +49,8 @@
             </div>
         {% endif %}
     </div>
-    <div class="order-2 col-lg-6">
+    <div class="order-2 col-lg-5">
         {{ render_if_has_content('h2', {class: 'h6'}, contact_page.form_title) }}
         {{ form|raw }}
     </div>
 </div>
-
-{#{{ render_if_has_content('div', {class: 'map'}, map) }}#}

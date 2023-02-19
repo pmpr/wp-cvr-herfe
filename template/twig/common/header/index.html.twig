@@ -3,8 +3,8 @@
     <div class="d-flex{% if has_container %} container{% endif %}">
         {% include get_template('title', _self) with {
             title: jumbotron,
-            title_size: 'md',
-            large_title_size: 'lg'
+            title_size: 'sm',
+            large_title_size: 'md'
         } %}
         {{ pmpr_do_action('after_page_title', object) }}
         {% block after_title %}{% endblock %}
