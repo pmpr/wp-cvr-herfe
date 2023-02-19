@@ -1,0 +1,14 @@
+{% if items is defined and items is not empty %}
+    <nav class="overflow-auto text-nowrap my-auto ml-1">
+        <ul class="browser list-group list-group-horizontal">
+            {% for item in items %}
+                <li class="browser-item list-group-item d-flex px-0 py-2">
+                    <a href="{{ item.permalink|esc_url }}" title="{{ item.title|esc_attr }}" aria-label="{{ item.title|esc_attr }}"
+                       class="text-gray-secondary d-block px-3{% if item.active %} active{% endif %}">
+                        {{ item.title|raw }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}
