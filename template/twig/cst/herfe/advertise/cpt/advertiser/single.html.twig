@@ -5,12 +5,14 @@
 {% block content %}
 
     {% embed get_cover_template('common/header/index') with {
+        hide_header_title: 1,
         has_container: 0,
         excerpt: '',
     } %}
         {% block after_title %}
             {{ pmpr_do_action('browser_render', {
-                items: advertiser.galleries
+                items: advertiser.galleries,
+                title: advertiser.browser_title
             }) }}
         {% endblock %}
     {% endembed %}

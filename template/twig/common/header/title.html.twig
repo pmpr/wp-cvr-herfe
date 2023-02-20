@@ -3,7 +3,9 @@
 {% set title_attrs = title_attrs|add('class', ' mb-' ~ title_margin|default('0')) %}
 
 {% set title_attrs = title_attrs|add('class', 'fs-' ~ title_size|default('md')) %}
-
+{% if hide_header_title|default(0) %}
+    {% set title_attrs = title_attrs|add('class', 'sr-only') %}
+{% endif %}
 {% if large_title_size is defined
     and large_title_size is not empty %}
 

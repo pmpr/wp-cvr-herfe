@@ -4,9 +4,17 @@
 
 {% block content %}
 
-    {% include get_cover_template('common/header/index') with {
-        has_container: 0
+    {% embed get_cover_template('common/header/index') with {
+        hide_header_title: 1,
+        has_container: 0,
     } %}
+        {% block after_title %}
+            {{ pmpr_do_action('browser_render', {
+                items: gallery.parentChildren,
+                title: gallery.browser_title
+            }) }}
+        {% endblock %}
+    {% endembed %}
 
     {{ wp_get_attachment_image(gallery.logo_id, 'thumbnail', {class: 'mx-auto d-block d-lg-none'})|raw }}
 
