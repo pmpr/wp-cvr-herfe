@@ -10,13 +10,12 @@
 {% block content %}
 
     {% embed get_cover_template('common/header/index') with {
+        nowrap: 1,
         has_container: 0,
-        hide_header_title: 1,
         title_attrs: {class: 'text-nowrap'}
     } %}
         {% block after_title %}
             {{ pmpr_do_action('browser_render', {
-                title: pmpr_apply_filters('magazine_archive_browser_title', ''),
                 items: pmpr_apply_filters('magazine_archive_browser_items', []),
                 taxonomy: 'medium',
             }) }}

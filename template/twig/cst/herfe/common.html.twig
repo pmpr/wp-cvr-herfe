@@ -19,16 +19,14 @@
     {% endif %}
 
     {% embed get_cover_template('common/header/index') with {
+        nowrap: 1,
         more_less: 1,
         has_container: 0,
-        hide_header_title: 1,
-        excerpt: content_text,
-        title_attrs: {class: 'text-nowrap'}
+        excerpt: content_text
     } %}
         {% block after_title %}
             {{ pmpr_do_action('browser_render', {
                 items: magazine.article_categories,
-                title: magazine.browser_title,
                 taxonomy: 'article_category',
             }) }}
         {% endblock %}

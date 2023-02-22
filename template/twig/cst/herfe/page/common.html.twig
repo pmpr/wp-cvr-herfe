@@ -4,12 +4,11 @@
 
     {{ parent() }}
     {% embed get_cover_template('common/header/index') with {
-        hide_header_title: 1
-    } %}
+        nowrap: 1,
+    }%}
         {% block after_title %}
             {{ pmpr_do_action('browser_render', {
-                items: pages,
-                title: browser_title
+                items: pages
             }) }}
         {% endblock %}
     {% endembed %}

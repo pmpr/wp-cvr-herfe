@@ -1,6 +1,8 @@
 {{ dynamic_sidebar('before-single-content') }}
 
-{{ render_if_has_content('div', {class: 'single-content text-justify ' ~ post_type|default('') ~ '-content ' ~ content_class|default('my-6') }, the_content()) }}
+<div class="single-content text-justify {{ post_type|default('') }}-content {{ content_class|default('my-6') }}">
+    {{ the_content() }}
+</div>
 
 {{ dynamic_sidebar('after-single-contenet') }}
 

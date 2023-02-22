@@ -1,15 +1,15 @@
-<nav class="browser my-auto">
-    {{ render_if_has_content('span', {class: 'highlight-text font-weight-bold primary-white px-3 py-1 fs-sm fs-md-md'}, title) }}
-    {% if items is defined and items is not empty %}
-        {% for item in items %}
-            <div class="browser-item px-0 py-2 position-relative d-inline-block">
-                <a href="{{ item.permalink|esc_url }}" title="{{ item.title|esc_attr }}"
-                   aria-label="{{ item.title|esc_attr }}"
-                   class="text-gray-secondary text-nowrap px-3{% if item.active %} active{% endif %} fs-sm">
-                    {{ item.title|raw }}
-                </a>
-            </div>
-        {% endfor %}
-    {% endif %}
-</nav>
-
+{% if items is defined and items is not empty %}
+    <nav class="overflow-auto text-nowrap my-auto ml-1">
+        <ul class="browser list-group list-group-horizontal">
+            {% for item in items %}
+                <li class="browser-item list-group-item d-flex px-0 py-2">
+                    <a href="{{ item.permalink|esc_url }}" title="{{ item.title|esc_attr }}"
+                       aria-label="{{ item.title|esc_attr }}"
+                       class="text-gray-secondary text-nowrap px-3{% if item.active %} active{% endif %} fs-sm">
+                        {{ item.title|raw }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}

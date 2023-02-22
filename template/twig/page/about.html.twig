@@ -3,9 +3,10 @@
 {% block inside_container %}
 
     <div class="row justify-content-center">
-        <div class="col-12 col-md-8 team">
+        <div class="col-12 col-md-8">
 
             {% embed get_cover_template('common/header/index') with {
+                nowrap: 1,
                 has_container: 0
             } %}
                 {% block after_title %}
