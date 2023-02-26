@@ -1,13 +1,13 @@
 {% set options = get_cover_option('more_less', {}) %}
 {% if options.enable %}
 
-    <div class="more-less">{{ content|raw }}</div>
+    <div class="more-less">{{ wpautop(content|more_less)|raw }}</div>
     <a class="more-less-toggle d-table font-weight-bold text-secondary-gray pt-2 ml-auto"
        href="#" data-less="{{ options.less_text|esc_attr }}" data-more="{{ options.more_text|esc_attr }}"
        title="{{ options.more_text|esc_attr }}">
         {{ options.more_text|raw }}
     </a>
 {% else %}
-    {{ content|raw }}
+    {{ wpautop(content)|raw }}
 {% endif %}
 
