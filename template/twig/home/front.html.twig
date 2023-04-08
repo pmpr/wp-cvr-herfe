@@ -4,6 +4,7 @@
 
     {% set sections = [
         'first_slider',
+        'subscription',
         'banner',
         'latest_posts',
         'advertisers',
@@ -29,7 +30,7 @@
                             } %}
                             {% if options.description is defined
                                 and options.description is not empty %}
-                                <div class="px-4 px-md-0 text-justify">
+                                <div class="px-4 px-md-0 mt-3 text-justify">
                                     {{ wpautop(options.description)|raw }}
                                 </div>
                             {% endif %}

@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+        {% for plan in plans %}
+            <div class="col-12 col-lg-6 col-xl-4 mb-5 d-flex">
+                {{ pmpr_do_action('subscription_render_plan', plan) }}
+            </div>
+        {% endfor %}
+    </div>
+</div>

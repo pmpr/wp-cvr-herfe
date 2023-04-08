@@ -16,38 +16,7 @@
         <div class="row my-5">
             {% for plan in plans %}
                 <div class="col-12 col-lg-6 col-xl-4 mb-5 d-flex">
-                    <article class="card shadow mn-h-450 w-100">
-                        <div class="card-body text-center mb-14">
-                            {{ render_if_has_content('h2', {class: 'h5 px-8 mt-5 centered-absolute top-0 ribbon ribbon-top'}, plan.display_title) }}
-                            {{ render_if_has_content('div', {class: 'mt-14'}, plan.price_html) }}
-                            {{ render_if_has_content('div', {class: 'h6 my-5 text-secondary'}, plan.period) }}
-
-                            {% if plan.features is not empty %}
-                                <div class="d-flex justify-content-center">
-                                    <ul class="list-group">
-                                        {% for feature in plan.features %}
-                                            {% if feature.text is not empty %}
-                                                <li class="list-group-item d-flex p-0{% if not loop.last %} mb-3{% endif %}">
-                                                    {{ render_icon(feature_icon, {class: 'my-auto icon-success icon-md mr-2'}) }}
-                                                    <span class="my-auto">{{ feature.text|raw }}</span>
-                                                </li>
-                                            {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            {% endif %}
-
-                            {{ render_if_has_content('div', {class: 'mt-5 text-muted'}, wpautop(plan.description)) }}
-
-
-                            {% include get_cover_template('common/call_to_action') with {
-                                has_icon: 0,
-                                attrs: {class: 'position-absolute bottom-0 left-0 btn-block'},
-                                text: add_to_cart ? plan.add_to_cart_text : plan.button_text,
-                                permalink: add_to_cart ? plan.add_to_cart_url : plan.permalink,
-                            } %}
-                        </div>
-                    </article>
+                    {% include get_template('../plan', _self) with {plan: plan} %}
                 </div>
             {% endfor %}
         </div>
