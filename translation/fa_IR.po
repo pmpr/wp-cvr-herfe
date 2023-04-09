@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Herfe Cover\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2023-04-08 15:15+0330\n"
+"POT-Creation-Date: 2023-04-08 16:08+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -301,11 +301,11 @@ msgstr "متادیتای سفارشی"
 #: src/Pmpr/Cover/Herfe/Metadata.php:101 src/Pmpr/Cover/Herfe/Setting.php:295
 #: src/Pmpr/Cover/Herfe/Setting.php:296
 msgid "Subtext"
-msgstr "زیر متن"
+msgstr "سوتیتر"
 
 #: src/Pmpr/Cover/Herfe/Metadata.php:106
-msgid "Author"
-msgstr "نویسنده"
+msgid "Author or Translator"
+msgstr "نویسنده یا مترجم"
 
 #: src/Pmpr/Cover/Herfe/Navigation/Navigation.php:36
 msgid "Desktop Navigation Menu"
@@ -807,6 +807,9 @@ msgstr "حذف این ایتم"
 #: woocommerce/sale-flash.php:12
 msgid "Sale"
 msgstr "فروش ویژه"
+
+#~ msgid "Author"
+#~ msgstr "نویسنده"
 
 #~ msgid "Page/Post"
 #~ msgstr "صفحه/نوشته"
