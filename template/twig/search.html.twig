@@ -3,7 +3,7 @@
 {% block before_container %}
     {{ parent() }}
     {% include get_cover_template('common/header/index') %}
-    <div class="my-6 bg-gray-2">
+    <div class="my-6 bg-gray-3">
         <div class="container py-10">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -15,18 +15,30 @@
 {% endblock %}
 
 {% block inside_container %}
-    {% set posts = have_posts() %}
 
-    {% if posts %}
+    {% set type = 'post' %}
+    {% set items = get_search_result() %}
+    {% if items %}
 
         <div class="row my-6">
-            {% for index, post in posts %}
+            {% for index, item in items %}
 
-                {% include get_cover_template('common/post/block') with {
-                    post: post,
-                    loop: loop,
-                    show_type: 1
-                } %}
+                {% if is_term(item) %}
+
+                    {% set type = 'term' %}
+                    {% include get_cover_template('common/term/block') with {
+                        term: item,
+                        loop: loop,
+                        show_type: 1
+                    } %}
+                {% elseif is_post(item) %}
+
+                    {% include get_cover_template('common/post/block') with {
+                        post: item,
+                        loop: loop,
+                        show_type: 1
+                    } %}
+                {% endif %}
             {% endfor %}
         </div>
 

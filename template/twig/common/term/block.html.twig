@@ -1,0 +1,18 @@
+{% set title = get_term_title(term) %}
+{% set taxonomy = render_term_data('type', term) %}
+{% set heading_element = heading_element|default('h2') %}
+
+{% set columns = 'col-12 col-md-6 col-lg-' ~ lg_col|default(3) %}
+<article class="block-{{ taxonomy.name|esc_attr }} position-relative {{ columns|esc_attr }} {{ card_bottom_margin(loop, columns, 5)|esc_attr }}">
+    <a href="{{ get_term_link(term)|esc_url }}" aria-label="{{ title|esc_attr }}" title="{{ title|esc_attr }}" class="stretched-link"></a>
+    {{ render_term_data('image', term, {size: is_mobile ? 'medium_mobile' : 'medium', attrs: {class: 'w-100'}})|raw }}
+    <div class="position-relative">
+        <div class="w-100 position-absolute bottom-0 bg-overlay primary-70">
+            {{ render_if_has_content(heading_element, {class: 'fs-sm font-weight-normal lh-xl text-white max-line max-line-2 p-3 mb-0'}, title) }}
+        </div>
+    </div>
+    {% if show_type|default(0) and taxonomy %}
+        {{ render_if_has_content('span', {class: 'position-absolute top-0 left-0 text-white bg-secondary px-5 py-1 ml-5 mt-3'}, pmpr_apply_filters('term_block_type_text', taxonomy.labels.singular_name, term, taxonomy)) }}
+    {% endif %}
+</article>
+
