@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             643bb705b213a             |
+    |             643bb9e3a649b             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Herfe; use Pmpr\Common\Foundation\Container\Container as BaseClass; use Pmpr\Cover\Herfe\Interfaces\CommonInterface; use Pmpr\Cover\Herfe\Traits\CommonTrait; abstract class Container extends BaseClass implements CommonInterface { use CommonTrait; public function __construct() { $this->settingObj = Setting::symcgieuakksimmu(); parent::__construct(); } }
