@@ -15,7 +15,7 @@
 {% if pmpr_apply_filters('has_header', 1) %}
 <div class="body-overlay"></div>
 
-<header id="side_header" class="site-header header-area">
+<header id="site_header" class="site-header header-area">
 
     {% set is_add_aside = not is_desktop() or customizer_option('add_aside_to_desktop') %}
     {% set navbar_classes = pmpr_apply_filters('header_navbar_classes', []) %}
