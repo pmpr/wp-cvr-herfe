@@ -1,8 +1,7 @@
 <div class="d-flex mb-4">
     {% include get_cover_template('common/logo') with {
-        logo: wp_get_attachment_url(logo),
-        width: 64,
-        height: 64
+        logo_key: logo,
+        logo_size: [64, 64]
     } %}
 
     <div class="ml-2 fs-sm font-weight-bold mt-auto">

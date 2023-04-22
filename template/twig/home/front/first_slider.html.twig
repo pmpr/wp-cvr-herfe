@@ -21,10 +21,9 @@
     <div {{ add_animation({class: 'position-absolute right-0 z-index-1 bg-white', id: 'carousel_logo'}, 'fadeInDown', 1, 1, 1)|raw }}>
         {% set logo_size = is_mobile() ? 120 : 180 %}
         {% include get_cover_template('common/logo') with {
-            width: logo_size,
-            height: logo_size,
             has_link: 0,
-            option_key: 'large_logo'
+            logo_size: [logo_size, logo_size],
+            logo_type: 'large'
         } %}
     </div>
 {% endblock %}
