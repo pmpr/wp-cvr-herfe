@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Herfe Cover\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2023-05-15 16:09+0330\n"
+"POT-Creation-Date: 2023-05-16 19:59+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
 "_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.3\n"
+"X-Generator: Poedit 3.3.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: build\n"
@@ -154,142 +154,140 @@ msgstr "پاورقی شماره %s"
 msgid "Scroll UP"
 msgstr "رفتن به بالا"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:27
+#: src/Pmpr/Cover/Herfe/Herfe.php:22
 msgid "Herfe Cover"
 msgstr "کاور حرفه هنرمند"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:218
+#: src/Pmpr/Cover/Herfe/Herfe.php:207
 msgid "Very Small"
 msgstr "خیلی کوچک"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:219
+#: src/Pmpr/Cover/Herfe/Herfe.php:208
 msgid "Small"
 msgstr "کوچک"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:220
+#: src/Pmpr/Cover/Herfe/Herfe.php:209
 msgid "Medium"
 msgstr "متوسط"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:221
+#: src/Pmpr/Cover/Herfe/Herfe.php:210
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:222
+#: src/Pmpr/Cover/Herfe/Herfe.php:211
 msgid "X Large"
 msgstr "خیلی بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:223
+#: src/Pmpr/Cover/Herfe/Herfe.php:212
 msgid "XX Large"
 msgstr "خیلی خیلی بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:224
+#: src/Pmpr/Cover/Herfe/Herfe.php:213
 msgid "Full Size"
 msgstr "اندازه کامل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:278
+#: src/Pmpr/Cover/Herfe/Herfe.php:267
 msgid "Single Sidebar"
 msgstr "سایدبار سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:279
+#: src/Pmpr/Cover/Herfe/Herfe.php:268
 msgid "Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:282
+#: src/Pmpr/Cover/Herfe/Herfe.php:271
 msgid "Post Single Sidebar"
 msgstr "سایدبار سینگل نوشته"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:283
+#: src/Pmpr/Cover/Herfe/Herfe.php:272
 msgid "Post Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل نوشته"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:286
+#: src/Pmpr/Cover/Herfe/Herfe.php:275
 msgid "Event Single Sidebar"
 msgstr "سایدبار سینگل رویداد"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:287
+#: src/Pmpr/Cover/Herfe/Herfe.php:276
 msgid "Event Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل رویداد"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:290
+#: src/Pmpr/Cover/Herfe/Herfe.php:279
 msgid "English Article Single Sidebar"
 msgstr "سایدبار سینگل نوشته انگلیسی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:291
+#: src/Pmpr/Cover/Herfe/Herfe.php:280
 msgid "English Article Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل نوشته انگلیسی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:294
+#: src/Pmpr/Cover/Herfe/Herfe.php:283
 msgid "After Single Add to Cart"
 msgstr "بعد از افزودن به سبد خرید سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:298
+#: src/Pmpr/Cover/Herfe/Herfe.php:287
 msgid "Product Single Sidebar"
 msgstr "سایدبار سینگل محصول"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:299
+#: src/Pmpr/Cover/Herfe/Herfe.php:288
 msgid "Product Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل محصول"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:306 src/Pmpr/Cover/Herfe/Setting.php:729
+#: src/Pmpr/Cover/Herfe/Herfe.php:295 src/Pmpr/Cover/Herfe/Setting.php:729
 msgid "Close"
 msgstr "بستن"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:307
+#: src/Pmpr/Cover/Herfe/Herfe.php:296
 msgid "Reply"
 msgstr "پاسخ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:308 src/Pmpr/Cover/Herfe/Setting.php:730
+#: src/Pmpr/Cover/Herfe/Herfe.php:297 src/Pmpr/Cover/Herfe/Setting.php:730
 msgid "Show All"
 msgstr "مشاهده همه"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:309
+#: src/Pmpr/Cover/Herfe/Herfe.php:298
 msgid "Magazines"
 msgstr "فصلنامه‌ها"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:310
+#: src/Pmpr/Cover/Herfe/Herfe.php:299
 msgid "Related to"
 msgstr "مرتبط با"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:311
+#: src/Pmpr/Cover/Herfe/Herfe.php:300
 msgid "Next Issues"
 msgstr "شماره‌های بعدی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:312
+#: src/Pmpr/Cover/Herfe/Herfe.php:301
 msgid "Prev Issues"
 msgstr "شماره‌های قبلی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:313
+#: src/Pmpr/Cover/Herfe/Herfe.php:302
 msgid "More Information"
 msgstr "اطلاعات بیشتر"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:314
+#: src/Pmpr/Cover/Herfe/Herfe.php:303
 msgid "There is no data to display."
 msgstr "داده‌ای برای نمایش وجود ندارد."
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:315
+#: src/Pmpr/Cover/Herfe/Herfe.php:304
 msgid "There are currently no events in this field."
 msgstr "در حال حاضر رویدادی در این زمینه وجود ندارد."
 
-#: src/Pmpr/Cover/Herfe/Image.php:103
+#: src/Pmpr/Cover/Herfe/Image.php:96
 msgid "Post Content"
 msgstr "محتوای نوشته"
 
-#: src/Pmpr/Cover/Herfe/Metadata.php:88
-msgid "Tag:"
-msgid_plural "Tags:"
-msgstr[0] "برچسب‌ها:"
-msgstr[1] "برچسب:"
+#: src/Pmpr/Cover/Herfe/Metadata.php:85
+msgid "Tags:"
+msgstr "برچسب‌ها:"
 
-#: src/Pmpr/Cover/Herfe/Metadata.php:105
+#: src/Pmpr/Cover/Herfe/Metadata.php:102
 msgid "Custom Metadata"
 msgstr "متادیتای سفارشی"
 
-#: src/Pmpr/Cover/Herfe/Metadata.php:109 src/Pmpr/Cover/Herfe/Setting.php:288
+#: src/Pmpr/Cover/Herfe/Metadata.php:106 src/Pmpr/Cover/Herfe/Setting.php:288
 #: src/Pmpr/Cover/Herfe/Setting.php:289
 msgid "Subtext"
 msgstr "سوتیتر"
 
-#: src/Pmpr/Cover/Herfe/Metadata.php:114
+#: src/Pmpr/Cover/Herfe/Metadata.php:111
 msgid "Author or Translator"
 msgstr "نویسنده یا مترجم"
 
@@ -768,7 +766,7 @@ msgstr "سبد خرید شما خالی است."
 msgid "View Account"
 msgstr "مشاهده حساب کاربری"
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Single.php:368
+#: src/Pmpr/Cover/Herfe/Woocommerce/Single.php:370
 #, php-format
 msgid "%s comment"
 msgstr "%s دیدگاه"
@@ -785,6 +783,11 @@ msgstr "حذف این ایتم"
 #: woocommerce/sale-flash.php:12
 msgid "Sale"
 msgstr "فروش ویژه"
+
+#~ msgid "Tag:"
+#~ msgid_plural "Tags:"
+#~ msgstr[0] "برچسب‌ها:"
+#~ msgstr[1] "برچسب:"
 
 #~ msgid "Logo"
 #~ msgstr "لوگو"
