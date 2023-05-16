@@ -1,13 +1,2 @@
 {% extends get_cover_template('common/archive/index') %}
 
-{% block before_container %}
-    {{ parent() }}
-    {% if excerpt is not empty %}
-        <div class="container my-5">
-            {% include get_cover_template('common/more_less') with {
-                content: excerpt,
-            } %}
-        </div>
-    {% endif %}
-{% endblock %}
-

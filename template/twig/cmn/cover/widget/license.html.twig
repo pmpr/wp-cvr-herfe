@@ -1,27 +1,28 @@
 {% if items is defined
     and items is not empty %}
-
     <div class="d-flex">
         {% for item in items %}
-            {% if item.markup is not empty %}
-                {{ item.markup|raw }}
-            {% else %}
-                <a href="{{ item.link|esc_attr }}"
-                   class="d-block mr-4"
-                   title="{{ item.title|esc_attr }}">
-                    {% if item.image_id is not empty %}
-                        {% if item.image_size is not empty %}
 
-                            {{ wp_get_attachment_image(item.image_id, item.image_size)|raw }}
-                        {% else %}
-                            <img alt="{{ get_title(item.image_id)|esc_attr }}"
-                                 src="{{ wp_get_attachment_url(item.image_id)|esc_url }}"
-                                 width="{{ item.width|esc_attr }}" height="{{ item.height|esc_attr }}">
-                        {% endif %}
-                    {% endif %}
-                </a>
+            {% set container_class = 'd-block' ~ (not loop.last ? ' mr-4': '') %}
+            {% if item.markup is not empty %}
+                {{ render_if_has_content('div', {class: container_class}, item.markup) }}
+            {% elseif item.image is not empty %}
+
+                {% if item.link is not empty %}
+
+                    <a href="{{ item.link|esc_attr }}" class="{{ container_class|esc_attr }}"
+                       title="{{ item.title|esc_attr }}"{% if item.rel is not empty %} rel="{{ item.rel|join(' ') }}"{% endif %}>
+                        {{ wp_get_attachment_image(item.image, item.image_size)|raw }}
+                    </a>
+
+                {% else %}
+
+                    {{ wp_get_attachment_image(item.image, item.image_size, {class: container_class})|raw }}
+
+                {% endif %}
+
             {% endif %}
+
         {% endfor %}
     </div>
-
 {% endif %}

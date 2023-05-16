@@ -9,9 +9,13 @@
         {{ pmpr_do_action('after_page_title', object) }}
         {% block after_title %}{% endblock %}
     </div>
+{% endif %}
+
+{% if excerpt is defined and excerpt is not empty %}
     <div class="text-justify my-5{% if has_container %} container{% endif %}">
         {% include get_template('description', _self) with {
             description: excerpt
         } %}
     </div>
 {% endif %}
+
