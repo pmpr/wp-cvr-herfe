@@ -33,10 +33,12 @@
     {% endembed %}
 
     {% if magazine.related_product is not empty %}
-        <a href="{% if not magazine.related_product.enable %}#{% else %}{{ magazine.related_product.permalink|esc_attr }}{% endif %}"
-           class="btn main-action{% if not magazine.related_product.enable %} disabled{% endif %}">
-            {{ magazine.related_product.title|raw }}
-        </a>
+        <div class="my-5">
+            <a href="{% if not magazine.related_product.enable %}#{% else %}{{ magazine.related_product.permalink|esc_attr }}{% endif %}"
+               class="btn main-action {% if not magazine.related_product.enable %} disabled{% endif %}">
+                {{ magazine.related_product.title|raw }}
+            </a>
+        </div>
     {% endif %}
 
     {% include get_cover_template('common/archive/content') with {

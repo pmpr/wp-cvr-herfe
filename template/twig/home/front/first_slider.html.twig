@@ -40,18 +40,18 @@
                     <a href="{{ carousel.permalink|esc_url }}" title="{{ carousel.title|esc_attr }}"
                        class="stretched-link"{% if carousel.external_link %} rel="noopener noreferrer nofollow" target="_blank"{% endif %}></a>
                 {% endif %}
-                <div class="container centered-absolute top-75 lh-md">
+                <div class="container centered-absolute top-{{ carousel.position_from_top|esc_attr }} lh-md">
                     {% if carousel.title is not empty %}
-                        <h3 {{ add_animation({class: common_class ~ ' fs-lg mb-1'}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
+                        <h3 {{ add_animation({class: common_class ~ ' mb-0 fs-' ~ carousel.titlefontsize}, 'fadeInLeft', 2, 1, loop.first) }}>{{ carousel.title|raw }}</h3>
                     {% endif %}
                     {% if carousel.text is not empty %}
-                        <p {{ add_animation({class: common_class ~ ' fs-md mb-4'}, 'fadeInLeft', 3.5, 1, loop.first) }}>{{ carousel.text|raw }}</p>
+                        <span {{ add_animation({class: common_class  ~ ' fs-' ~ carousel.textfontsize ~ ' mt-' ~ carousel.textmargin }, 'fadeInLeft', 3.5, 1, loop.first) }}>{{ carousel.text|raw }}</span>
                     {% endif %}
                     {% if carousel.subtext is not empty %}
-                        <p {{ add_animation({class: common_class ~ ' fs-sm mb-4'}, 'fadeInLeft', 5, 1, loop.first) }}>{{ carousel.subtext|raw }}</p>
+                        <span {{ add_animation({class: common_class ~ ' fs-' ~ carousel.subtextfontsize ~ ' mt-' ~ carousel.subtextmargin}, 'fadeInLeft', 5, 1, loop.first) }}>{{ carousel.subtext|raw }}</span>
                     {% endif %}
                     {% if carousel.button is not empty %}
-                        <a {{ add_animation({class: 'btn btn-lg main-action'}, 'fadeInLeft', 6.5, 1, loop.first) }}>{{ carousel.button|raw }}</a>
+                        <a {{ add_animation({class: 'btn btn-lg main-action mt-4'}, 'fadeInLeft', 6.5, 1, loop.first) }}>{{ carousel.button|raw }}</a>
                     {% endif %}
                 </div>
             </article>
