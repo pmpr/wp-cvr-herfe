@@ -29,14 +29,14 @@
                     {% include get_cover_template('common/term/block') with {
                         term: item,
                         loop: loop,
-                        show_type: 1
+                        show_type: 0
                     } %}
                 {% elseif is_post(item) %}
 
                     {% include get_cover_template('common/post/block') with {
                         post: item,
                         loop: loop,
-                        show_type: 1
+                        show_type: 0
                     } %}
                 {% endif %}
             {% endfor %}

@@ -14,8 +14,8 @@
             {{ render_if_has_content(heading_element, {class: 'fs-sm font-weight-normal lh-xl text-white max-line max-line-2 p-3 mb-0'}, title) }}
         </div>
     </div>
-    {% if show_type|default(0) %}
-        {{ render_if_has_content('span', {class: 'position-absolute top-0 left-0 text-white bg-secondary px-5 py-1 ml-5 mt-3'}, pmpr_apply_filters('post_block_type_text', '', post, post_type)) }}
-    {% endif %}
+{#    {% if show_type|default(0) %}#}
+{#        {{ render_if_has_content('span', {class: 'position-absolute top-0 left-0 text-white bg-secondary px-5 py-1 ml-5 mt-3'}, pmpr_apply_filters('post_block_type_text', '', post, post_type)) }}#}
+{#    {% endif %}#}
 </article>
 
