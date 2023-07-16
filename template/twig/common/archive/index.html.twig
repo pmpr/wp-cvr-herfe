@@ -2,7 +2,9 @@
 
 {% block before_container %}
     {{ parent() }}
-    {% include get_cover_template('common/header/index') %}
+    <div class="single-content">
+        {% include get_cover_template('common/header/index') %}
+    </div>
 {% endblock %}
 
 {% block inside_container %}
@@ -10,4 +12,5 @@
         posts: have_posts()
     } %}
 {% endblock %}
+
 
