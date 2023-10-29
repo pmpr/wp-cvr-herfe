@@ -2,6 +2,7 @@
     <div class="search-box-content centered-absolute mx-w-700 px-8 w-100 z-index-3">
         {{ render_icon(icon, {class: 'icon-white search-box-close d-block mb-5 as-link'}, 1) }}
         {{ get_search_form()|raw }}
+        {{ pmpr_do_action('after_header_search_box_form') }}
     </div>
 </div>
 
