@@ -11,5 +11,8 @@
 {{ dynamic_sidebar('after-single-contenet') }}
 
 {% if comments_open(post) %}
-    {{ render_if_has_content('div', {class: 'mb-5 mt-11' }, comments_template()) }}
+    {% set comments %}
+        {{ comments_template() }}
+    {% endset %}
+    {{ render_if_has_content('div', {class: 'mb-5 mt-11' }, comments) }}
 {% endif %}
