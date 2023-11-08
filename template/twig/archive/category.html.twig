@@ -1,2 +1,4 @@
 {% set nowrap = 1 %}
-{% extends get_template('./index', _self) %}
+{% extends get_template('./index', _self) with {
+    post_block_link_rel: 'nofollow'
+} %}

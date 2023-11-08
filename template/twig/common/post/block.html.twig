@@ -8,7 +8,8 @@
         image_size: is_mobile ? 'medium_mobile' : 'medium',
         image_attr: {class: 'w-100'}
     } %}
-    <a href="{{ get_permalink(post)|esc_url }}" aria-label="{{ title|esc_attr }}" title="{{ title|esc_attr }}" class="stretched-link"></a>
+    <a href="{{ get_permalink(post)|esc_url }}" aria-label="{{ title|esc_attr }}"
+       title="{{ title|esc_attr }}" class="stretched-link"{% if post_block_link_rel is not empty %} rel="{{ post_block_link_rel|esc_attr }}" {% endif %}></a>
     <div class="position-relative">
         <div class="w-100 position-absolute bottom-0 bg-overlay primary-70">
             {{ render_if_has_content(heading_element, {class: 'fs-sm font-weight-normal lh-xl text-white max-line max-line-2 p-3 mb-0'}, title) }}
