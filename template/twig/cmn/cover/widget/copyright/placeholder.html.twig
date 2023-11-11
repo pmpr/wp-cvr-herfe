@@ -1,5 +1,5 @@
 {% if name == 'name_as_link' %}
-    <a href="{{ home_url() }}" class="text-secondary">{{ value|raw }}</a>
+    <a href="{{ home_url() }}" rel="nofollow" class="text-secondary">{{ value|raw }}</a>
 {% elseif name == 'start_date'
     or name == 'end_date' %}
     <time datetime="{{ value|date('Y') }}">{{ value|datetime('Y') }}</time>
