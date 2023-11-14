@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6551103c074cc             |
+    |             65533ad425802             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Herfe\Page; use Pmpr\Common\Foundation\Page\Page; abstract class Common extends Page { }
