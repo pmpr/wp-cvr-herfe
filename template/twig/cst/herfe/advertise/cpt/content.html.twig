@@ -10,9 +10,9 @@
     } %}
 
     {% include get_cover_template('common/post/thumbnail') with {
-        image_size: is_mobile ? 'medium_mobile' : 'thumbnail',
+        image_size: is_mobile ? 'medium' : 'thumbnail',
         image_attr: is_mobile ? {class: 'w-100'} : {},
-        figure_class: 'float-left mr-6'
+        figure_class: 'float-left responsive mr-6'
     } %}
 
     {% include get_cover_template('common/single/content') with {

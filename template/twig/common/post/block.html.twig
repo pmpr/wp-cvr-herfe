@@ -5,8 +5,9 @@
 {% set columns = 'col-12 col-md-6 col-lg-' ~ lg_col|default(3) %}
 <article class="block-{{ post_type.name|esc_attr }} position-relative{% if post_type.name is same as('english_article') %} direction-ltr-force text-right{% endif %} {{ columns|esc_attr }} {{ card_bottom_margin(loop, columns, 5)|esc_attr }}">
     {% include get_template('./thumbnail', _self) with {
-        image_size: is_mobile ? 'medium_mobile' : 'medium',
-        image_attr: {class: 'w-100'}
+        image_size: 'medium',
+        image_attr: {class: 'w-100'},
+        figure_class: 'responsive mb-0'
     } %}
     <a href="{{ get_permalink(post)|esc_url }}" aria-label="{{ title|esc_attr }}"
        title="{{ title|esc_attr }}" class="stretched-link"{% if post_block_link_rel is not empty %} rel="{{ post_block_link_rel|esc_attr }}" {% endif %}></a>

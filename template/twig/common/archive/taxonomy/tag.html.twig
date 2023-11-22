@@ -1,0 +1,36 @@
+{% extends get_cover_template('container') %}
+
+{% block before_container %}
+    {{ parent() }}
+    <div class="single-content">
+        {% include get_cover_template('common/header/index') with {
+            nowrap: 0,
+            excerpt: is_paged() ? '' : excerpt|more_less(1)
+        } %}
+    </div>
+{% endblock %}
+
+{% block inside_container %}
+    {% include get_template('../content', _self) with {
+        posts: have_posts(),
+        post_block_link_rel: 'nofollow'
+    } %}
+{% endblock %}
+
+{% block after_container %}
+    <div class="container">
+        {% if not is_paged() %}
+            {% set second = excerpt|more_less(2) %}
+            {% if second is not empty %}
+                <div class="single-content">
+                    {% include get_cover_template('common/header/description') with {
+                        description: second
+                    } %}
+                </div>
+            {% endif %}
+        {% endif %}
+        {% include get_template('../comment', _self) %}
+    </div>
+{% endblock %}
+
+

@@ -1,12 +1,14 @@
 <div class="container">
     <article class="row no-gutters position-relative">
         <a href="{{ get_permalink(magazine)|esc_url }}" class="stretched-link" title="{{ get_title(magazine) }}"></a>
-        {% include get_cover_template('common/post/thumbnail') with {
-            post: magazine,
-            image_size: is_mobile ? 'medium_mobile' : 'medium_large',
-            image_attr: {class: 'w-100'},
-            figure_class: 'col-12 col-md-4 mb-0'
-        } %}
+        <figure class="mb-0 responsive">
+            {% include get_cover_template('common/post/thumbnail') with {
+                post: magazine,
+                image_size: is_mobile ? 'medium' : 'medium_large',
+                image_attr: {class: 'w-100'},
+                figure_class: 'col-12 col-md-4 responsive mb-0'
+            } %}
+        </figure>
         <div class="col-12 col-md-8 bg-gray-2 text-white p-6 p-md-8 text-justify">
             {% if display_title %}
                 <h3 class="text-white">{{ get_title(magazine)|raw }}</h3>

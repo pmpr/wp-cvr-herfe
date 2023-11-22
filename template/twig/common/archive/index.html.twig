@@ -8,9 +8,13 @@
 {% endblock %}
 
 {% block inside_container %}
+
     {% include get_template('./content', _self) with {
         posts: have_posts()
     } %}
+
+    {% include get_template('./comment', _self) %}
+
 {% endblock %}
 
 

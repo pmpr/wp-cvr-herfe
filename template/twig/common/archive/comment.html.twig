@@ -1,0 +1,16 @@
+{% if pmpr_apply_filters('comment_is_allow_render', 0) %}
+
+    {% set comments %}
+        {{ comments_template() }}
+    {% endset %}
+
+    {% if comments is not empty %}
+        <div class="row mb-5 mt-11">
+            <div class="col-lg-9 mb-5 mb-lg-0 order-2">{{ comments|raw }}</div>
+            <aside class="col-lg-3 order-3">
+                {% include get_cover_template('common/archive/taxonomy/widget') %}
+            </aside>
+        </div>
+    {% endif %}
+{% endif %}
+
