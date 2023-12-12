@@ -11,6 +11,8 @@
             {{ comments|raw }}
         {% endif %}
     </ul>
-    {{ pagination|raw }}
+    {% include get_cover_template('common/pagination') with {
+        pagination: pagination
+    } %}
 </div>
 

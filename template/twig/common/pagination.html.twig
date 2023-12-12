@@ -1,0 +1,6 @@
+{% if pagination is not empty %}
+    <nav{% if pagination_label %} aria-label="{{ pagination_label|esc_attr }}"{% endif %}
+            class="my-6 d-flex justify-content-center">
+        {{ pagination|raw }}
+    </nav>
+{% endif %}
