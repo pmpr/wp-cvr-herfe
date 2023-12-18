@@ -1,0 +1,14 @@
+{% set heading_element = heading_element|default('h2') %}
+{% set columns = 'col-12 col-md-6 col-lg-' ~ lg_col|default(3) %}
+<article class="block-{{ item.type|esc_attr }} position-relative {{ columns|esc_attr }} {{ card_bottom_margin(loop, columns, 5)|esc_attr }}">
+    <a href="{{ item.permalink|esc_url }}" aria-label="{{ item.title|esc_attr }}" title="{{ item.title|esc_attr }}" class="stretched-link"></a>
+    <figure class="mb-0 responsive">
+        {{ wp_get_attachment_image(item.thumbnail, 'medium', {class: 'w-100'})|raw }}
+    </figure>
+    <div class="position-relative">
+        <div class="w-100 position-absolute bottom-0 bg-overlay primary-70">
+            {{ render_if_has_content(heading_element, {class: 'fs-sm font-weight-normal lh-xl text-white max-line max-line-2 p-3 mb-0'}, item.title) }}
+        </div>
+    </div>
+</article>
+
