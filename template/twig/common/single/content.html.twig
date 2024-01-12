@@ -2,7 +2,7 @@
 {{ pmpr_do_action('before_single_content', post, post_type) }}
 {{ pmpr_do_action('before_' ~ post_type ~ '_single_content', post) }}
 
-<div class="single-content text-justify {{ post_type|default('') }}-content {{ content_class|default('my-5') }}">
+<div class="single-content{% if not wc_is_account_page() %} text-justify{% endif%} {{ post_type|default('') }}-content {{ content_class|default('my-5') }}">
     {{ the_content() }}
 </div>
 
