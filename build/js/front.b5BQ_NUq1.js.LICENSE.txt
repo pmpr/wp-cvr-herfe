@@ -1,4 +1,6 @@
-/*! ./../scss/app.scss */
+/*! @/scss/app.scss */
+
+/*! jquery */
 
 /*!*************************!*\
   !*** external "jQuery" ***!
@@ -11,6 +13,14 @@
 /*!**************************************!*\
   !*** ./asset/js/app.js + 15 modules ***!
   \**************************************/
+
+/*!***************************************!*\
+  !*** ./asset/js/front.js + 1 modules ***!
+  \***************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/slick-carousel/slick/slick.js ***!
+  \****************************************************/
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
