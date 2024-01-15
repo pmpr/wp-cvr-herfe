@@ -11,17 +11,9 @@
 
     {{ 'woocommerce_output_all_notices'|call() }}
 
-    {% if plans is not empty %}
-
-        <div class="row my-5">
-            {% for plan in plans %}
-                <div class="col-12 col-lg-6 col-xl-4 mb-5 d-flex">
-                    {% include get_template('../plan', _self) with {plan: plan} %}
-                </div>
-            {% endfor %}
-        </div>
-
-    {% endif %}
+    <div class="my-5">
+        {% include get_template('../plans', _self) with {plans: plans} %}
+    </div>
 
     {% include get_cover_template('common/single/content') %}
 

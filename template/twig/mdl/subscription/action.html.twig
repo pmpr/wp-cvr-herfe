@@ -2,7 +2,7 @@
     {% set attrs = attrs|add('class', 'btn btn-primary') %}
     {{ render_if_has_content('a', attrs, text) }}
 {% else %}
-    <div class="d-flex justify-content-end">
+    <div class="d-flex justify-content-center">
         {% if key is same as ('library_view') %}
             {% set classes = 'btn btn-light' %}
         {% else %}

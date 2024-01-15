@@ -1,9 +1,17 @@
-<div class="text-center my-3">
-    {{ wpautop(message)|raw }}
-</div>
-<div class="d-flex justify-content-center">
-    {% for action in actions %}
-        {{ action|raw }}
-    {% endfor %}
+<div class="restriction-content">
+    <div class="text-center mb-5 mb-lg-10">
+        {{ wpautop(message)|raw }}
+        <div class="message-wrapper"></div>
+    </div>
+    {% if actions is iterable %}
+        <div class="d-flex justify-content-center">
+            {% for action in actions %}
+                {{ action|raw }}
+            {% endfor %}
+        </div>
+    {% else %}
+        {{ render_frontend_spinner() }}
+        {{ actions|raw }}
+    {% endif %}
 </div>
 
