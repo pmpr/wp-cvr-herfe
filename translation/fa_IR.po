@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Herfe Cover\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2023-12-18 12:48+0330\n"
+"POT-Creation-Date: 2024-01-15 15:36+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
 "_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: build\n"
@@ -311,7 +311,7 @@ msgstr "درباره ما"
 msgid "Team"
 msgstr "تیم"
 
-#: src/Pmpr/Cover/Herfe/Search.php:127
+#: src/Pmpr/Cover/Herfe/Search.php:126
 msgid "Search ..."
 msgstr "جستجو ..."
 
@@ -774,11 +774,11 @@ msgstr "اکنون"
 msgid "From %s to %s"
 msgstr "از %s تا %s"
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Base.php:130
+#: src/Pmpr/Cover/Herfe/Woocommerce/Base.php:129
 msgid "Select"
 msgstr "انتخاب"
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Base.php:149
+#: src/Pmpr/Cover/Herfe/Woocommerce/Base.php:151
 #, php-format
 msgctxt "Price range: from-to"
 msgid "%1$s %2$s %3$s"
