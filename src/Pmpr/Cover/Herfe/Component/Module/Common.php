@@ -4,4 +4,4 @@
     |             662cf7810605b             |
     |_______________________________________|
 */
- pmpr_do_action("\x72\145\x6e\144\145\162\137\x68\x65\x61\144\145\162");
+ namespace Pmpr\Cover\Herfe\Component\Module; use Pmpr\Cover\Herfe\Container; abstract class Common extends Container { }

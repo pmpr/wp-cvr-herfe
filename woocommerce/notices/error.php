@@ -12,7 +12,7 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 3.9.0
+ * @version 8.6.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -26,7 +26,7 @@ if (!$notices) {
 ?>
 <div class="woocommerce-error <?php pmpr_get_wc_alert_class('error')?>">
     <?php if (count($notices) > 1): ?>
-        <ul class="list-group-flush list-group-compact mb-0 pl-0">
+        <ul class="list-group-flush list-group-compact mb-0 pl-0" role="alert">
 		    <?php foreach ($notices as $index => $notice) : ?>
                 <li<?php echo wc_get_notice_data_attr($notice); ?> class="list-group-item border-0 bg-transparent p-0 mb-2">
 				    <?php echo wc_kses_notice($notice['notice']); ?>
