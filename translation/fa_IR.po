@@ -137,7 +137,7 @@ msgstr "آیکون جستجو هدر"
 
 #: src/Pmpr/Cover/Herfe/Footer.php:30
 msgid "Wordpress Design and Development by Pmpr"
-msgstr "طراحی و توسعه توسط تیم مهندس محمدپور"
+msgstr "طراحی و توسعه توسط تیم دکتر محمدپور"
 
 #: src/Pmpr/Cover/Herfe/Footer.php:33
 msgid "Signature"
@@ -1532,7 +1532,7 @@ msgstr "فروش ویژه"
 #~ msgstr "من در یک نگاه"
 
 #~ msgid "Eng Peyman Mohamadpour"
-#~ msgstr "مهندس پیمان محمدپور"
+#~ msgstr "دکتر پیمان محمدپور"
 
 #~ msgid "Master of Information Technology"
 #~ msgstr "کارشناس ارشد فناوری اطلاعات"
