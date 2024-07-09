@@ -4,7 +4,9 @@
 
 {% block content %}
 
-    {% include get_cover_template('common/single/index') %}
+    {% include get_cover_template('common/single/index') with {
+        render_thumbnail: 0
+    } %}
 
 {% endblock %}
 

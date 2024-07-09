@@ -1,5 +1,5 @@
 <div class="position-relative remote-pagination mb-5 mb-lg-0">
-    {{ render_spinner() }}
+    {{ render_frontend_spinner() }}
     <div class="row {{ type|esc_attr }}-list pagination-list{% if list_container_class is defined and list_container_class is not empty %} {{ list_container_class|esc_attr }}{% endif %}">
         {% block list %}{% endblock %}
         {% set pagination = pagination|default(pmpr_apply_filters(type ~ '_pagination_info', [])) %}

@@ -1,7 +1,9 @@
-{% include get_cover_template('common/post/thumbnail') with {
-    image_size: 'large',
-    image_attr: {class: 'w-100'}
-} %}
+{% if render_thumbnail|default(1) %}
+    {% include get_cover_template('common/post/thumbnail') with {
+        image_size: 'large',
+        image_attr: {class: 'w-100'}
+    } %}
+{% endif %}
 
 {% include get_cover_template('common/header/title') with {
     title: jumbotron,

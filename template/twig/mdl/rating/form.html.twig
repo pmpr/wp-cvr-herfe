@@ -1,6 +1,6 @@
 <div class="rating-container text-center my-5 mn-h-100 position-relative">
 
-    {{ render_spinner({hide: render, overlay: render ? 1 : 0}) }}
+    {{ render_frontend_spinner({hide: render, overlay: render ? 1 : 0}) }}
     {% if render is defined and render %}
         <div class="rating-wrapper">
             {% if user_rate is not defined or user_rate is empty %}
