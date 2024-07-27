@@ -6,10 +6,10 @@
 {% block inside_container %}
     {% block before_row %}{% endblock %}
     <div class="row{% if row_class|default('') is not empty %} {{ row_class|esc_attr }}{% endif %}">
-        <main class="col-lg-9 mb-5 mb-lg-0 order-2">
+        <main class="col-12 col-lg-8 order-{{ main_order|default(0)|esc_attr }}">
             {% block content %}{% endblock %}
         </main>
-        <aside class="col-lg-3{% if sidebar_first|default(0) %} order-1{% else %} order-3{% endif %}">
+        <aside class="col-12 col-lg-4 order-{{ sidebar_order|default(1)|esc_attr }}">
             {% block sidebar %}{% endblock %}
         </aside>
         {% block after_columns %}{% endblock %}
