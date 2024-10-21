@@ -3,7 +3,13 @@
 {% block before_container %}
     {{ parent() }}
     <div class="single-content">
-        {% include get_cover_template('common/header/index') %}
+        {% embed get_cover_template('common/header/index') with {
+            nowrap: 1,
+        }%}
+            {% block after_title %}
+                {{ pmpr_do_action('after_archive_title') }}
+            {% endblock %}
+        {% endembed %}
     </div>
 {% endblock %}
 
