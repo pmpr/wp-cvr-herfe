@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             678a9fe217005             |
+    |             6800f864c3e9e             |
     |_______________________________________|
 */
- pmpr_do_action("\x72\x65\x6e\x64\x65\162\137\x66\157\x6f\x74\145\x72");
+ pmpr_do_action('render_footer');
