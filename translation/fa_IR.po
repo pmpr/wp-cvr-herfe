@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Herfe Cover\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2024-05-16 19:47+0330\n"
+"POT-Creation-Date: 2025-05-11 01:22+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
 "_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: build\n"
@@ -25,256 +25,256 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: asset\n"
 "X-Poedit-SearchPathExcluded-4: build\n"
 
-#: functions.php:16
+#: functions.php:10
 msgid "Herfe"
 msgstr "حرفه هنرمند"
 
-#: src/Pmpr/Cover/Herfe/Browser.php:44
+#: src/Pmpr/Cover/Herfe/Browser.php:47
 msgid "All"
 msgstr "همه"
 
-#: src/Pmpr/Cover/Herfe/Comment.php:148
+#: src/Pmpr/Cover/Herfe/Comment.php:150
 msgid "Write Comment"
 msgstr "ارسال دیدگاه"
 
-#: src/Pmpr/Cover/Herfe/Comment.php:168
+#: src/Pmpr/Cover/Herfe/Comment.php:170
 msgid "Save my name and email."
 msgstr "نام و ایمیل من را ذخیره کنید."
 
-#: src/Pmpr/Cover/Herfe/Comment.php:209
+#: src/Pmpr/Cover/Herfe/Comment.php:211
 msgid "Leave a Comment"
 msgstr "ارسال دیدگاه"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:30
+#: src/Pmpr/Cover/Herfe/Customizer.php:49
 msgid "General Setting"
 msgstr "تنظیمات عمومی"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:34
+#: src/Pmpr/Cover/Herfe/Customizer.php:52
 msgid "Enable Scroll to Top"
 msgstr "دکمه رفتن به بالا"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:39
+#: src/Pmpr/Cover/Herfe/Customizer.php:57
 msgid "Scroll to Top Icon"
 msgstr "آیکون رفتن به بالا"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:47
+#: src/Pmpr/Cover/Herfe/Customizer.php:63
 msgid "Header Setting"
 msgstr "تنظیمات هدر"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:51 src/Pmpr/Cover/Herfe/Setting.php:236
-#: src/Pmpr/Cover/Herfe/Setting.php:597
+#: src/Pmpr/Cover/Herfe/Customizer.php:65 src/Pmpr/Cover/Herfe/Setting.php:239
+#: src/Pmpr/Cover/Herfe/Setting.php:583
 msgid "General"
 msgstr "عمومی"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:55
+#: src/Pmpr/Cover/Herfe/Customizer.php:68
 msgid "Make Header Sticky"
 msgstr "استیکی کردن هدر"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:61 src/Pmpr/Cover/Herfe/Header.php:110
+#: src/Pmpr/Cover/Herfe/Customizer.php:72 src/Pmpr/Cover/Herfe/Header.php:111
 msgid "Mobile Aside"
 msgstr "منوی موبایل"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:65 src/Pmpr/Cover/Herfe/Customizer.php:70
+#: src/Pmpr/Cover/Herfe/Customizer.php:75 src/Pmpr/Cover/Herfe/Customizer.php:80
 msgid "Add Mobile Aside to Desktop"
 msgstr "افزودن منو موبایل به دسکتاپ"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:76
+#: src/Pmpr/Cover/Herfe/Customizer.php:84
 msgid "Left Menu"
 msgstr "منوی سمت چپ"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:80
+#: src/Pmpr/Cover/Herfe/Customizer.php:87
 msgid "Header My Account"
 msgstr "حساب کاربری من"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:89
+#: src/Pmpr/Cover/Herfe/Customizer.php:96
 msgid "Header My Account Text"
 msgstr "متن حساب کاربری من"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:90
-#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:134
+#: src/Pmpr/Cover/Herfe/Customizer.php:97
+#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:137
 msgid "My Account"
 msgstr "حساب کاربری من"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:94
+#: src/Pmpr/Cover/Herfe/Customizer.php:101
 msgid "Header My Account Icon"
 msgstr "آیکون حساب‌ کاربری من"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:99
+#: src/Pmpr/Cover/Herfe/Customizer.php:106
 msgid "Header My Account Items"
 msgstr "آیتم‌های حساب کاربری من"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:105
+#: src/Pmpr/Cover/Herfe/Customizer.php:112
 msgid "Header Cart"
 msgstr "سبد خرید"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:110
+#: src/Pmpr/Cover/Herfe/Customizer.php:117
 msgid "Header Cart Text"
 msgstr "متن سبد خرید"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:111 src/Pmpr/Cover/Herfe/Setting.php:615
+#: src/Pmpr/Cover/Herfe/Customizer.php:118 src/Pmpr/Cover/Herfe/Setting.php:601
 msgid "Cart"
 msgstr "سبد خرید"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:115
+#: src/Pmpr/Cover/Herfe/Customizer.php:122
 msgid "Header Cart Icon"
 msgstr "آیکون سبد خرید"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:120
+#: src/Pmpr/Cover/Herfe/Customizer.php:127
 msgid "Header Search"
 msgstr "جستجو"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:125
+#: src/Pmpr/Cover/Herfe/Customizer.php:132
 msgid "Header Search Placeholder"
 msgstr "متن جستجو"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:126
+#: src/Pmpr/Cover/Herfe/Customizer.php:133
 msgid "Search"
 msgstr "جستجو"
 
-#: src/Pmpr/Cover/Herfe/Customizer.php:130
+#: src/Pmpr/Cover/Herfe/Customizer.php:137
 msgid "Header Search Icon"
 msgstr "آیکون جستجو هدر"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:30
+#: src/Pmpr/Cover/Herfe/Footer.php:31
 msgid "Wordpress Design and Development by Pmpr"
 msgstr "طراحی و توسعه توسط تیم دکتر محمدپور"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:33
+#: src/Pmpr/Cover/Herfe/Footer.php:36
 msgid "Signature"
 msgstr "امضا"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:40 src/Pmpr/Cover/Herfe/Footer.php:41
-#: src/Pmpr/Cover/Herfe/Footer.php:42 src/Pmpr/Cover/Herfe/Footer.php:43
-#: src/Pmpr/Cover/Herfe/Footer.php:44
+#: src/Pmpr/Cover/Herfe/Footer.php:44 src/Pmpr/Cover/Herfe/Footer.php:45
+#: src/Pmpr/Cover/Herfe/Footer.php:46 src/Pmpr/Cover/Herfe/Footer.php:47
+#: src/Pmpr/Cover/Herfe/Footer.php:48
 #, php-format
 msgid "Footer #%s"
 msgstr "پاورقی شماره %s"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:76
+#: src/Pmpr/Cover/Herfe/Footer.php:80
 msgid "Scroll UP"
 msgstr "رفتن به بالا"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:24
+#: src/Pmpr/Cover/Herfe/Herfe.php:25
 msgid "Herfe Cover"
 msgstr "کاور حرفه هنرمند"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:224
+#: src/Pmpr/Cover/Herfe/Herfe.php:230
 msgid "Very Small"
 msgstr "خیلی کوچک"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:225
+#: src/Pmpr/Cover/Herfe/Herfe.php:231
 msgid "Small"
 msgstr "کوچک"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:226
+#: src/Pmpr/Cover/Herfe/Herfe.php:232
 msgid "Medium"
 msgstr "متوسط"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:227
+#: src/Pmpr/Cover/Herfe/Herfe.php:233
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:228
+#: src/Pmpr/Cover/Herfe/Herfe.php:234
 msgid "X Large"
 msgstr "خیلی بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:229
+#: src/Pmpr/Cover/Herfe/Herfe.php:235
 msgid "XX Large"
 msgstr "خیلی خیلی بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:230
+#: src/Pmpr/Cover/Herfe/Herfe.php:236
 msgid "Full Size"
 msgstr "اندازه کامل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:284
+#: src/Pmpr/Cover/Herfe/Herfe.php:290
 msgid "Single Sidebar"
 msgstr "سایدبار سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:285
+#: src/Pmpr/Cover/Herfe/Herfe.php:291
 msgid "Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:288
+#: src/Pmpr/Cover/Herfe/Herfe.php:294
 msgid "Taxonomy Sidebar"
 msgstr "سایدبار طبقه‌بندی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:289
+#: src/Pmpr/Cover/Herfe/Herfe.php:295
 msgid "Sticky Taxonomy Sidebar"
 msgstr "سایدبار استیکی طبقه‌بندی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:292
+#: src/Pmpr/Cover/Herfe/Herfe.php:298
 msgid "Post Single Sidebar"
 msgstr "سایدبار سینگل نوشته"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:293
+#: src/Pmpr/Cover/Herfe/Herfe.php:299
 msgid "Post Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل نوشته"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:296
+#: src/Pmpr/Cover/Herfe/Herfe.php:302
 msgid "Event Single Sidebar"
 msgstr "سایدبار سینگل رویداد"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:297
+#: src/Pmpr/Cover/Herfe/Herfe.php:303
 msgid "Event Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل رویداد"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:300
+#: src/Pmpr/Cover/Herfe/Herfe.php:306
 msgid "English Article Single Sidebar"
 msgstr "سایدبار سینگل نوشته انگلیسی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:301
+#: src/Pmpr/Cover/Herfe/Herfe.php:307
 msgid "English Article Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل نوشته انگلیسی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:304
+#: src/Pmpr/Cover/Herfe/Herfe.php:310
 msgid "After Single Add to Cart"
 msgstr "بعد از افزودن به سبد خرید سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:308
+#: src/Pmpr/Cover/Herfe/Herfe.php:314
 msgid "Product Single Sidebar"
 msgstr "سایدبار سینگل محصول"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:309
+#: src/Pmpr/Cover/Herfe/Herfe.php:315
 msgid "Product Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل محصول"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:316 src/Pmpr/Cover/Herfe/Setting.php:917
+#: src/Pmpr/Cover/Herfe/Herfe.php:320 src/Pmpr/Cover/Herfe/Setting.php:944
 msgid "Close"
 msgstr "بستن"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:317
+#: src/Pmpr/Cover/Herfe/Herfe.php:321
 msgid "Reply"
 msgstr "پاسخ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:318 src/Pmpr/Cover/Herfe/Setting.php:918
+#: src/Pmpr/Cover/Herfe/Herfe.php:322 src/Pmpr/Cover/Herfe/Setting.php:945
 msgid "Show All"
 msgstr "مشاهده همه"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:319
+#: src/Pmpr/Cover/Herfe/Herfe.php:323
 msgid "Magazines"
 msgstr "فصلنامه‌ها"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:320
+#: src/Pmpr/Cover/Herfe/Herfe.php:324
 msgid "Related to"
 msgstr "مرتبط با"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:321
+#: src/Pmpr/Cover/Herfe/Herfe.php:325
 msgid "Next Issues"
 msgstr "شماره‌های بعدی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:322
+#: src/Pmpr/Cover/Herfe/Herfe.php:326
 msgid "Prev Issues"
 msgstr "شماره‌های قبلی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:323
+#: src/Pmpr/Cover/Herfe/Herfe.php:327
 msgid "More Information"
 msgstr "اطلاعات بیشتر"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:324
+#: src/Pmpr/Cover/Herfe/Herfe.php:328
 msgid "There is no data to display."
 msgstr "داده‌ای برای نمایش وجود ندارد."
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:325
+#: src/Pmpr/Cover/Herfe/Herfe.php:329
 msgid "There are currently no events in this field."
 msgstr "در حال حاضر رویدادی در این زمینه وجود ندارد."
 
@@ -282,16 +282,16 @@ msgstr "در حال حاضر رویدادی در این زمینه وجود ند
 msgid "Tags:"
 msgstr "برچسب‌ها:"
 
-#: src/Pmpr/Cover/Herfe/Metadata.php:102
+#: src/Pmpr/Cover/Herfe/Metadata.php:104
 msgid "Custom Metadata"
 msgstr "متادیتای سفارشی"
 
-#: src/Pmpr/Cover/Herfe/Metadata.php:106 src/Pmpr/Cover/Herfe/Setting.php:346
-#: src/Pmpr/Cover/Herfe/Setting.php:347 src/Pmpr/Cover/Herfe/Setting.php:869
+#: src/Pmpr/Cover/Herfe/Metadata.php:108 src/Pmpr/Cover/Herfe/Setting.php:349
+#: src/Pmpr/Cover/Herfe/Setting.php:350 src/Pmpr/Cover/Herfe/Setting.php:895
 msgid "Subtext"
 msgstr "سوتیتر"
 
-#: src/Pmpr/Cover/Herfe/Metadata.php:111
+#: src/Pmpr/Cover/Herfe/Metadata.php:113
 msgid "Author or Translator"
 msgstr "نویسنده یا مترجم"
 
@@ -311,487 +311,491 @@ msgstr "درباره ما"
 msgid "Team"
 msgstr "تیم"
 
-#: src/Pmpr/Cover/Herfe/Search.php:150
+#: src/Pmpr/Cover/Herfe/Search.php:152
 msgid "Search ..."
 msgstr "جستجو ..."
 
-#: src/Pmpr/Cover/Herfe/Setting.php:156
+#: src/Pmpr/Cover/Herfe/Setting.php:160
 msgid "Cover Setting"
 msgstr "تنظیمات کاور"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:168
+#: src/Pmpr/Cover/Herfe/Setting.php:172
 msgid "Hashur"
 msgstr "هاشور"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:170 src/Pmpr/Cover/Herfe/Setting.php:191
-#: src/Pmpr/Cover/Herfe/Setting.php:302 src/Pmpr/Cover/Herfe/Setting.php:363
-#: src/Pmpr/Cover/Herfe/Setting.php:389 src/Pmpr/Cover/Herfe/Setting.php:425
-#: src/Pmpr/Cover/Herfe/Setting.php:456 src/Pmpr/Cover/Herfe/Setting.php:501
-#: src/Pmpr/Cover/Herfe/Setting.php:533 src/Pmpr/Cover/Herfe/Setting.php:563
-#: src/Pmpr/Cover/Herfe/Setting.php:801
+#: src/Pmpr/Cover/Herfe/Setting.php:174 src/Pmpr/Cover/Herfe/Setting.php:195
+#: src/Pmpr/Cover/Herfe/Setting.php:305 src/Pmpr/Cover/Herfe/Setting.php:366
+#: src/Pmpr/Cover/Herfe/Setting.php:398 src/Pmpr/Cover/Herfe/Setting.php:442
+#: src/Pmpr/Cover/Herfe/Setting.php:487 src/Pmpr/Cover/Herfe/Setting.php:519
+#: src/Pmpr/Cover/Herfe/Setting.php:549 src/Pmpr/Cover/Herfe/Setting.php:787
+#: src/Pmpr/Cover/Herfe/Setting.php:811
 msgid "Enable"
 msgstr "فعال"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:171 src/Pmpr/Cover/Herfe/Setting.php:192
-#: src/Pmpr/Cover/Herfe/Setting.php:303 src/Pmpr/Cover/Herfe/Setting.php:364
-#: src/Pmpr/Cover/Herfe/Setting.php:390 src/Pmpr/Cover/Herfe/Setting.php:426
-#: src/Pmpr/Cover/Herfe/Setting.php:457 src/Pmpr/Cover/Herfe/Setting.php:502
-#: src/Pmpr/Cover/Herfe/Setting.php:534 src/Pmpr/Cover/Herfe/Setting.php:564
+#: src/Pmpr/Cover/Herfe/Setting.php:175 src/Pmpr/Cover/Herfe/Setting.php:196
+#: src/Pmpr/Cover/Herfe/Setting.php:306 src/Pmpr/Cover/Herfe/Setting.php:367
+#: src/Pmpr/Cover/Herfe/Setting.php:399 src/Pmpr/Cover/Herfe/Setting.php:443
+#: src/Pmpr/Cover/Herfe/Setting.php:488 src/Pmpr/Cover/Herfe/Setting.php:520
+#: src/Pmpr/Cover/Herfe/Setting.php:550 src/Pmpr/Cover/Herfe/Setting.php:812
 msgid "Check this item if you want show this section in front page"
 msgstr "اگر می‌خواهید این بخش در صفحه اول نمایش داده شود این گزینه را فعال کنید"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:175 src/Pmpr/Cover/Herfe/Setting.php:196
-#: src/Pmpr/Cover/Herfe/Setting.php:307 src/Pmpr/Cover/Herfe/Setting.php:368
-#: src/Pmpr/Cover/Herfe/Setting.php:394 src/Pmpr/Cover/Herfe/Setting.php:430
-#: src/Pmpr/Cover/Herfe/Setting.php:461 src/Pmpr/Cover/Herfe/Setting.php:506
-#: src/Pmpr/Cover/Herfe/Setting.php:538 src/Pmpr/Cover/Herfe/Setting.php:568
+#: src/Pmpr/Cover/Herfe/Setting.php:179 src/Pmpr/Cover/Herfe/Setting.php:200
+#: src/Pmpr/Cover/Herfe/Setting.php:310 src/Pmpr/Cover/Herfe/Setting.php:371
+#: src/Pmpr/Cover/Herfe/Setting.php:403 src/Pmpr/Cover/Herfe/Setting.php:447
+#: src/Pmpr/Cover/Herfe/Setting.php:492 src/Pmpr/Cover/Herfe/Setting.php:524
+#: src/Pmpr/Cover/Herfe/Setting.php:554 src/Pmpr/Cover/Herfe/Setting.php:816
 msgid "Section Title"
 msgstr "عنوان بخش"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:180 src/Pmpr/Cover/Herfe/Setting.php:201
-#: src/Pmpr/Cover/Herfe/Setting.php:373 src/Pmpr/Cover/Herfe/Setting.php:399
-#: src/Pmpr/Cover/Herfe/Setting.php:465 src/Pmpr/Cover/Herfe/Setting.php:510
-#: src/Pmpr/Cover/Herfe/Setting.php:542 src/Pmpr/Cover/Herfe/Setting.php:572
+#: src/Pmpr/Cover/Herfe/Setting.php:184 src/Pmpr/Cover/Herfe/Setting.php:205
+#: src/Pmpr/Cover/Herfe/Setting.php:376 src/Pmpr/Cover/Herfe/Setting.php:408
+#: src/Pmpr/Cover/Herfe/Setting.php:451 src/Pmpr/Cover/Herfe/Setting.php:496
+#: src/Pmpr/Cover/Herfe/Setting.php:528 src/Pmpr/Cover/Herfe/Setting.php:558
 msgid "Section Description"
 msgstr "توضیحات بخش"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:189
+#: src/Pmpr/Cover/Herfe/Setting.php:193
 msgid "Subscription"
 msgstr "اشتراک"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:207
+#: src/Pmpr/Cover/Herfe/Setting.php:210
 msgid "Plans"
 msgstr "پلن‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:210 src/Pmpr/Cover/Herfe/Setting.php:217
-#: src/Pmpr/Cover/Herfe/Setting.php:223
+#: src/Pmpr/Cover/Herfe/Setting.php:213 src/Pmpr/Cover/Herfe/Setting.php:220
+#: src/Pmpr/Cover/Herfe/Setting.php:226
 msgid "Plan"
 msgstr "پلن"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:215 src/Pmpr/Cover/Herfe/Setting.php:478
+#: src/Pmpr/Cover/Herfe/Setting.php:218 src/Pmpr/Cover/Herfe/Setting.php:464
 msgid "First Image"
 msgstr "تصویر اول"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:217 src/Pmpr/Cover/Herfe/Setting.php:223
-#: src/Pmpr/Cover/Herfe/Setting.php:333 src/Pmpr/Cover/Herfe/Setting.php:337
-#: src/Pmpr/Cover/Herfe/Setting.php:652
+#: src/Pmpr/Cover/Herfe/Setting.php:220 src/Pmpr/Cover/Herfe/Setting.php:226
+#: src/Pmpr/Cover/Herfe/Setting.php:336 src/Pmpr/Cover/Herfe/Setting.php:340
+#: src/Pmpr/Cover/Herfe/Setting.php:638
 msgid "Image"
 msgstr "تصویر"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:221 src/Pmpr/Cover/Herfe/Setting.php:484
+#: src/Pmpr/Cover/Herfe/Setting.php:224 src/Pmpr/Cover/Herfe/Setting.php:470
 msgid "Second Image"
 msgstr "تصویر دوم"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:228
+#: src/Pmpr/Cover/Herfe/Setting.php:231
 msgid "Plans Subtext"
 msgstr "متن زیر پلن‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:238
+#: src/Pmpr/Cover/Herfe/Setting.php:241
 msgid "General Configuration"
 msgstr "پیکربندی عمومی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:241
+#: src/Pmpr/Cover/Herfe/Setting.php:244
 msgid "Less More"
 msgstr "مطالعه بیشتر"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:246
+#: src/Pmpr/Cover/Herfe/Setting.php:249
 msgid "Enable More Less"
 msgstr "دکمه مطالعه بیشتر"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:250
+#: src/Pmpr/Cover/Herfe/Setting.php:253
 msgid "More Text"
 msgstr "متن «مطالعه بیشتر»"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:254
+#: src/Pmpr/Cover/Herfe/Setting.php:257
 msgid "Less Text"
 msgstr "متن «بستن»"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:260
+#: src/Pmpr/Cover/Herfe/Setting.php:263
 msgid "Post Block"
 msgstr "بلاک نمایشی نوشته‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:264
+#: src/Pmpr/Cover/Herfe/Setting.php:267
 msgid "Override Block Ribbons"
 msgstr "تغییر برچسب بلاک‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:267
+#: src/Pmpr/Cover/Herfe/Setting.php:270
 msgid "Post Type"
 msgstr "نوع نوشته"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:272
+#: src/Pmpr/Cover/Herfe/Setting.php:275
 msgid "Alternative"
 msgstr "جایگزین"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:276
+#: src/Pmpr/Cover/Herfe/Setting.php:279
 msgid "Use Term"
 msgstr "استفاده از ترم"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:281
+#: src/Pmpr/Cover/Herfe/Setting.php:284
 msgid "Taxonomy"
 msgstr "تکسونومی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:289
+#: src/Pmpr/Cover/Herfe/Setting.php:292
 msgid "Home"
 msgstr "خانه"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:291
+#: src/Pmpr/Cover/Herfe/Setting.php:294
 msgid "Home Sections Configuration"
 msgstr "پیکربندی بخش‌های صفحه اصلی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:294 src/Pmpr/Cover/Herfe/Setting.php:787
+#: src/Pmpr/Cover/Herfe/Setting.php:297 src/Pmpr/Cover/Herfe/Setting.php:773
 msgid "Sections"
 msgstr "بخش‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:298
+#: src/Pmpr/Cover/Herfe/Setting.php:301
 msgid "First Slider"
 msgstr "اسلایدر اول"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:313
+#: src/Pmpr/Cover/Herfe/Setting.php:316
 msgid "Slider Items"
 msgstr "آیتم‌های اسلایدر"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:316 src/Pmpr/Cover/Herfe/Setting.php:329
-#: src/Pmpr/Cover/Herfe/Setting.php:333 src/Pmpr/Cover/Herfe/Setting.php:337
-#: src/Pmpr/Cover/Herfe/Setting.php:342 src/Pmpr/Cover/Herfe/Setting.php:347
+#: src/Pmpr/Cover/Herfe/Setting.php:319 src/Pmpr/Cover/Herfe/Setting.php:332
+#: src/Pmpr/Cover/Herfe/Setting.php:336 src/Pmpr/Cover/Herfe/Setting.php:340
+#: src/Pmpr/Cover/Herfe/Setting.php:345 src/Pmpr/Cover/Herfe/Setting.php:350
 msgid "Post"
 msgstr "نوشته‌"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:321
+#: src/Pmpr/Cover/Herfe/Setting.php:324
 msgid "Permalink"
 msgstr "پیوند"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:325
+#: src/Pmpr/Cover/Herfe/Setting.php:328
 msgid "Use Post Data"
 msgstr "استفاده از مقادیر نوشته"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:328 src/Pmpr/Cover/Herfe/Setting.php:329
-#: src/Pmpr/Cover/Herfe/Setting.php:490 src/Pmpr/Cover/Herfe/Setting.php:491
-#: src/Pmpr/Cover/Herfe/Setting.php:672 src/Pmpr/Cover/Herfe/Setting.php:681
-#: src/Pmpr/Cover/Herfe/Setting.php:696 src/Pmpr/Cover/Herfe/Setting.php:711
-#: src/Pmpr/Cover/Herfe/Setting.php:720 src/Pmpr/Cover/Herfe/Setting.php:794
-#: src/Pmpr/Cover/Herfe/Setting.php:861
+#: src/Pmpr/Cover/Herfe/Setting.php:331 src/Pmpr/Cover/Herfe/Setting.php:332
+#: src/Pmpr/Cover/Herfe/Setting.php:476 src/Pmpr/Cover/Herfe/Setting.php:477
+#: src/Pmpr/Cover/Herfe/Setting.php:658 src/Pmpr/Cover/Herfe/Setting.php:667
+#: src/Pmpr/Cover/Herfe/Setting.php:682 src/Pmpr/Cover/Herfe/Setting.php:697
+#: src/Pmpr/Cover/Herfe/Setting.php:706 src/Pmpr/Cover/Herfe/Setting.php:780
+#: src/Pmpr/Cover/Herfe/Setting.php:887
 msgid "Title"
 msgstr "عنوان"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:332
+#: src/Pmpr/Cover/Herfe/Setting.php:335
 msgid "Desktop Image"
 msgstr "تصویر دسکتاپ"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:336
+#: src/Pmpr/Cover/Herfe/Setting.php:339
 msgid "Mobile Image"
 msgstr "تصویر موبایل"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:341 src/Pmpr/Cover/Herfe/Setting.php:647
-#: src/Pmpr/Cover/Herfe/Setting.php:865
+#: src/Pmpr/Cover/Herfe/Setting.php:344 src/Pmpr/Cover/Herfe/Setting.php:633
+#: src/Pmpr/Cover/Herfe/Setting.php:891
 msgid "Text"
 msgstr "متن"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:342
+#: src/Pmpr/Cover/Herfe/Setting.php:345
 msgid "Excerpt"
 msgstr "چکیده"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:350
+#: src/Pmpr/Cover/Herfe/Setting.php:353
 msgid "Button Text"
 msgstr "متن دکمه"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:351
+#: src/Pmpr/Cover/Herfe/Setting.php:354
 msgid "Leave empty if you don't want a button"
 msgstr "اگر نمی‌خواهید دکمه‌ای نمایش داده شود، خالی رها کنید"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:360
+#: src/Pmpr/Cover/Herfe/Setting.php:363
 msgid "Links"
 msgstr "پیوندها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:378 src/Pmpr/Cover/Herfe/Setting.php:470
-#: src/Pmpr/Cover/Herfe/Setting.php:686 src/Pmpr/Cover/Herfe/Setting.php:701
-#: src/Pmpr/Cover/Herfe/Setting.php:724 src/Pmpr/Cover/Herfe/Setting.php:791
+#: src/Pmpr/Cover/Herfe/Setting.php:381 src/Pmpr/Cover/Herfe/Setting.php:456
+#: src/Pmpr/Cover/Herfe/Setting.php:672 src/Pmpr/Cover/Herfe/Setting.php:687
+#: src/Pmpr/Cover/Herfe/Setting.php:710 src/Pmpr/Cover/Herfe/Setting.php:777
 msgid "Items"
 msgstr "آیتم‌ها‌"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:386
+#: src/Pmpr/Cover/Herfe/Setting.php:389
+msgid "First Advertising Banner"
+msgstr "اولین بنر تبلیغاتی"
+
+#: src/Pmpr/Cover/Herfe/Setting.php:395
 msgid "Latest Blog Posts"
 msgstr "آخرین نوشته‌های وبلاگ"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:405
+#: src/Pmpr/Cover/Herfe/Setting.php:414
 msgid "Recent"
 msgstr "آخرین نوشته‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:406
+#: src/Pmpr/Cover/Herfe/Setting.php:415
 msgid "Custom"
 msgstr "سفارشی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:407
+#: src/Pmpr/Cover/Herfe/Setting.php:416
 msgid "Most Controversial"
 msgstr "پر بحث‌ ترین نوشته‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:409
+#: src/Pmpr/Cover/Herfe/Setting.php:418
 msgid "Select Method"
 msgstr "نحوه انتخاب"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:414
+#: src/Pmpr/Cover/Herfe/Setting.php:423
 msgid "Custom Posts"
 msgstr "نوشته‌های سفارشی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:423
-msgid "Advertising Banner"
-msgstr "بنر تبلیغاتی"
+#: src/Pmpr/Cover/Herfe/Setting.php:432
+msgid "Second Advertising Banner"
+msgstr "دومین بنر تبلیغاتی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:435
-msgid "Banner Link"
-msgstr "لینک بنر"
-
-#: src/Pmpr/Cover/Herfe/Setting.php:440
-msgid "Banner Image"
-msgstr "تصویر بنر"
-
-#: src/Pmpr/Cover/Herfe/Setting.php:445
-msgid "Mobile Banner Image"
-msgstr "تصویر بنر در موبایل"
-
-#: src/Pmpr/Cover/Herfe/Setting.php:452
+#: src/Pmpr/Cover/Herfe/Setting.php:438
 msgid "Advertisers"
 msgstr "تبلیغ‌ دهندگان"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:473 src/Pmpr/Cover/Herfe/Setting.php:480
-#: src/Pmpr/Cover/Herfe/Setting.php:486 src/Pmpr/Cover/Herfe/Setting.php:491
+#: src/Pmpr/Cover/Herfe/Setting.php:459 src/Pmpr/Cover/Herfe/Setting.php:466
+#: src/Pmpr/Cover/Herfe/Setting.php:472 src/Pmpr/Cover/Herfe/Setting.php:477
 msgid "Advertiser"
 msgstr "تبلیغ دهنده"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:480 src/Pmpr/Cover/Herfe/Setting.php:486
+#: src/Pmpr/Cover/Herfe/Setting.php:466 src/Pmpr/Cover/Herfe/Setting.php:472
 msgid "Thumbnail"
 msgstr "تصویر بندانگشتی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:497
+#: src/Pmpr/Cover/Herfe/Setting.php:483
 msgid "Elected Magazine"
 msgstr "فصلنامه منتخب"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:515 src/Pmpr/Cover/Herfe/Setting.php:525
+#: src/Pmpr/Cover/Herfe/Setting.php:501 src/Pmpr/Cover/Herfe/Setting.php:511
 msgid "Magazine"
 msgstr "فصلنامه"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:516
+#: src/Pmpr/Cover/Herfe/Setting.php:502
 msgid "Leave empty if you prefer to show latest magazine by issue number"
 msgstr ""
 "اگر ترجیح می‌دهید آخرین فصل‌نامه با توجه به شماره آن به صورت خودکار نمایش داده‌ "
 "شود، این فیلد را خالی رها کنید"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:520
+#: src/Pmpr/Cover/Herfe/Setting.php:506
 msgid "Display Title"
 msgstr "نمایش عنوان"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:524
+#: src/Pmpr/Cover/Herfe/Setting.php:510
 msgid "Item Description"
 msgstr "شرح آیتم"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:525
+#: src/Pmpr/Cover/Herfe/Setting.php:511
 msgid "Description"
 msgstr "شرح"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:531
+#: src/Pmpr/Cover/Herfe/Setting.php:517
 msgid "First Product List"
 msgstr "اولین لیست محصولات"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:547 src/Pmpr/Cover/Herfe/Setting.php:577
+#: src/Pmpr/Cover/Herfe/Setting.php:533 src/Pmpr/Cover/Herfe/Setting.php:563
 msgid "Categories"
 msgstr "دسته‌بندی‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:548 src/Pmpr/Cover/Herfe/Setting.php:578
+#: src/Pmpr/Cover/Herfe/Setting.php:534 src/Pmpr/Cover/Herfe/Setting.php:564
 msgid "By select category, latest product of that categories show on the section"
 msgstr ""
 "با انتخاب دسته‌بندی، اخرین محصولات مربوط به دسته‌بندی‌های انتخاب شده در این بخش "
 "نمایش داده‌ می‌شود"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:553 src/Pmpr/Cover/Herfe/Setting.php:583
+#: src/Pmpr/Cover/Herfe/Setting.php:539 src/Pmpr/Cover/Herfe/Setting.php:569
 msgid "Products"
 msgstr "محصولات"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:560
+#: src/Pmpr/Cover/Herfe/Setting.php:546
 msgid "Second Product List"
 msgstr "دومین لیست محصولات"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:592
+#: src/Pmpr/Cover/Herfe/Setting.php:578
 msgid "WooCommerce"
 msgstr "ووکامرس"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:594
+#: src/Pmpr/Cover/Herfe/Setting.php:580
 msgid "Woocommerce Configuration"
 msgstr "پیکربندی ووکامرس"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:601
+#: src/Pmpr/Cover/Herfe/Setting.php:587
 msgid "Enable Hide/Show Password"
 msgstr "فعال کردن نمایش دادن/مخفی کردن پسورد"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:602
+#: src/Pmpr/Cover/Herfe/Setting.php:588
 msgid ""
 "Check this option if you want add hide/show ability to login & register forms."
 msgstr ""
 "اگر می‌خواهید قابلیت نمایش/مخفی به فرم‌های ثبت‌نام و ورود اضافه شود، این گزینه را "
 "فعال کنید."
 
-#: src/Pmpr/Cover/Herfe/Setting.php:606 src/Pmpr/Cover/Herfe/Setting.php:610
+#: src/Pmpr/Cover/Herfe/Setting.php:592 src/Pmpr/Cover/Herfe/Setting.php:596
 msgid "Remove Coupon From Checkout Page"
 msgstr "حذف کوپن از صفحه پرداخت"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:619
+#: src/Pmpr/Cover/Herfe/Setting.php:605
 msgid "Change Empty Cart Link"
 msgstr "تغییر لینک سبد خالی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:624
+#: src/Pmpr/Cover/Herfe/Setting.php:610
 msgid "Empty Cart Link"
 msgstr "لینک سبد خالی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:629
+#: src/Pmpr/Cover/Herfe/Setting.php:615
 msgid "Empty Cart Link Text"
 msgstr "متن لینک سبد خالی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:634
+#: src/Pmpr/Cover/Herfe/Setting.php:620
 msgid "External Store"
 msgstr "فروشگاه خارجی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:638
+#: src/Pmpr/Cover/Herfe/Setting.php:624
 msgid "Show"
 msgstr "نمایش"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:642
+#: src/Pmpr/Cover/Herfe/Setting.php:628
 msgid "Link"
 msgstr "پیوند"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:656
+#: src/Pmpr/Cover/Herfe/Setting.php:642
 msgid "Show On"
 msgstr "نمایش در"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:658
+#: src/Pmpr/Cover/Herfe/Setting.php:644
 msgid "Show on Related Product and Magazine with this term"
 msgstr "نمایش در محصولات و فصلنامه‌ مرتبط با این ترم"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:663
+#: src/Pmpr/Cover/Herfe/Setting.php:649
 msgid "Contact Us"
 msgstr "ارتباط با ما"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:665
+#: src/Pmpr/Cover/Herfe/Setting.php:651
 msgid "Contact Us Page Configuration"
 msgstr "پیکربندی صفحه ارتباط با ما"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:668
+#: src/Pmpr/Cover/Herfe/Setting.php:654
 msgid "Form"
 msgstr "فرم"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:677
+#: src/Pmpr/Cover/Herfe/Setting.php:663
 msgid "Contact Information"
 msgstr "اطلاعات تماس"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:692
+#: src/Pmpr/Cover/Herfe/Setting.php:678
 msgid "Social Media"
 msgstr "شبکه‌های اجتماعی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:707
+#: src/Pmpr/Cover/Herfe/Setting.php:693
 msgid "Address"
 msgstr "آدرس"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:716
+#: src/Pmpr/Cover/Herfe/Setting.php:702
 msgid "Direction"
 msgstr "مسیریابی"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:732
+#: src/Pmpr/Cover/Herfe/Setting.php:718
 msgid "Sections Config"
 msgstr "پیکربندی بخش‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:746
+#: src/Pmpr/Cover/Herfe/Setting.php:732
 #, php-format
 msgid "%s Section"
 msgstr "بخش‌ %s"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:749
+#: src/Pmpr/Cover/Herfe/Setting.php:735
 #, php-format
 msgid "%s Members"
 msgstr "اعضای %s"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:752
+#: src/Pmpr/Cover/Herfe/Setting.php:738
 msgid "Show Member"
 msgstr "نمایش عضو"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:755
+#: src/Pmpr/Cover/Herfe/Setting.php:741
 msgid "Member Image"
 msgstr "تصویر عضو"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:759
+#: src/Pmpr/Cover/Herfe/Setting.php:745
 msgid "Member Full Name"
 msgstr "نام کامل عضو"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:762
+#: src/Pmpr/Cover/Herfe/Setting.php:748
 msgid "Profession or Education"
 msgstr "حرفه یا تحصیلات"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:766
+#: src/Pmpr/Cover/Herfe/Setting.php:752
 msgid "Member Show Priority"
 msgstr "اولویت نمایش عضو"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:769
+#: src/Pmpr/Cover/Herfe/Setting.php:755
 msgid "Work From"
 msgstr "از"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:772
+#: src/Pmpr/Cover/Herfe/Setting.php:758
 msgid "Work To"
 msgstr "تا"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:773
+#: src/Pmpr/Cover/Herfe/Setting.php:759
 msgid "Leave empty if already working."
 msgstr "اگر در حال حاضر مشغول به کار است، خالی رها‌ کنید."
 
-#: src/Pmpr/Cover/Herfe/Setting.php:782
+#: src/Pmpr/Cover/Herfe/Setting.php:768
 msgid "Teams"
 msgstr "همکاران"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:784
+#: src/Pmpr/Cover/Herfe/Setting.php:770
 msgid "Teams Page Configuration"
 msgstr "پیکربندی صفحه تیم‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:797
+#: src/Pmpr/Cover/Herfe/Setting.php:783
 msgid "Display Priority"
 msgstr "اولویت نمایش"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:819
+#: src/Pmpr/Cover/Herfe/Setting.php:821
+msgid "Banner Link"
+msgstr "لینک بنر"
+
+#: src/Pmpr/Cover/Herfe/Setting.php:826
+msgid "Banner Image"
+msgstr "تصویر بنر"
+
+#: src/Pmpr/Cover/Herfe/Setting.php:831
+msgid "Mobile Banner Image"
+msgstr "تصویر بنر در موبایل"
+
+#: src/Pmpr/Cover/Herfe/Setting.php:844
 msgid "Desktop"
 msgstr "دسکتاپ"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:820
+#: src/Pmpr/Cover/Herfe/Setting.php:845
 msgid "Mobile"
 msgstr "موبایل"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:854
+#: src/Pmpr/Cover/Herfe/Setting.php:880
 msgid "Position From Top"
 msgstr "فاصله از بالا"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:858
+#: src/Pmpr/Cover/Herfe/Setting.php:884
 msgid "Fontsize"
 msgstr "اندازه فونت"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:874
+#: src/Pmpr/Cover/Herfe/Setting.php:900
 msgid "Margin"
 msgstr "فاصله بین آیتم‌ها"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:877
+#: src/Pmpr/Cover/Herfe/Setting.php:903
 msgid "Text Space from Title"
 msgstr "فاصله متن از عنوان"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:881
+#: src/Pmpr/Cover/Herfe/Setting.php:907
 msgid "Subtext Space from Text"
 msgstr "فاصله سوتیتر از متن"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:894
+#: src/Pmpr/Cover/Herfe/Setting.php:921
 msgid "Archive Tab Title"
 msgstr "عنوان تب آرشیو"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:908
+#: src/Pmpr/Cover/Herfe/Setting.php:935
 #, php-format
 msgid "Leave empty, if you want to use the %1$s's %2$s"
 msgstr "اگر می‌خواهید از %2$s خود %1$s استفاده شود، این فیلد را خالی رها کنید"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:1082
+#: src/Pmpr/Cover/Herfe/Setting.php:1110
 msgid "Now"
 msgstr "اکنون"
 
-#: src/Pmpr/Cover/Herfe/Setting.php:1093
+#: src/Pmpr/Cover/Herfe/Setting.php:1121
 #, php-format
 msgid "From %s to %s"
 msgstr "از %s تا %s"
@@ -806,28 +810,28 @@ msgctxt "Price range: from-to"
 msgid "%1$s %2$s %3$s"
 msgstr ""
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:45
+#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:43
 msgid "View cart"
 msgstr "مشاهده سبد خرید"
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:52
+#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:50
 msgid "Checkout"
 msgstr "تسویه حساب"
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:90
+#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:89
 msgid "Shopping Cart"
 msgstr "سبد خرید"
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:91
+#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:90
 msgid "Product"
 msgstr "محصول"
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:92
+#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:91
 #: woocommerce/cart/mini-cart.php:103
 msgid "No products in the cart."
 msgstr "سبد خرید شما خالی است."
 
-#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:135
+#: src/Pmpr/Cover/Herfe/Woocommerce/Header.php:138
 msgid "View Account"
 msgstr "مشاهده حساب کاربری"
 
