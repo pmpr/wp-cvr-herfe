@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Herfe Cover\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2025-05-11 01:22+0330\n"
+"POT-Creation-Date: 2025-09-30 12:06+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -13,11 +13,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;"
-"esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
-"_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.7\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: build\n"
@@ -135,22 +134,22 @@ msgstr "جستجو"
 msgid "Header Search Icon"
 msgstr "آیکون جستجو هدر"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:31
+#: src/Pmpr/Cover/Herfe/Footer.php:33
 msgid "Wordpress Design and Development by Pmpr"
-msgstr "طراحی و توسعه توسط تیم دکتر محمدپور"
+msgstr "تیم توسعه وب پیمان محمدپور"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:36
+#: src/Pmpr/Cover/Herfe/Footer.php:38
 msgid "Signature"
 msgstr "امضا"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:44 src/Pmpr/Cover/Herfe/Footer.php:45
 #: src/Pmpr/Cover/Herfe/Footer.php:46 src/Pmpr/Cover/Herfe/Footer.php:47
-#: src/Pmpr/Cover/Herfe/Footer.php:48
+#: src/Pmpr/Cover/Herfe/Footer.php:48 src/Pmpr/Cover/Herfe/Footer.php:49
+#: src/Pmpr/Cover/Herfe/Footer.php:50
 #, php-format
 msgid "Footer #%s"
 msgstr "پاورقی شماره %s"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:80
+#: src/Pmpr/Cover/Herfe/Footer.php:82
 msgid "Scroll UP"
 msgstr "رفتن به بالا"
 
@@ -158,123 +157,123 @@ msgstr "رفتن به بالا"
 msgid "Herfe Cover"
 msgstr "کاور حرفه هنرمند"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:230
+#: src/Pmpr/Cover/Herfe/Herfe.php:223
 msgid "Very Small"
 msgstr "خیلی کوچک"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:231
+#: src/Pmpr/Cover/Herfe/Herfe.php:224
 msgid "Small"
 msgstr "کوچک"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:232
+#: src/Pmpr/Cover/Herfe/Herfe.php:225
 msgid "Medium"
 msgstr "متوسط"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:233
+#: src/Pmpr/Cover/Herfe/Herfe.php:226
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:234
+#: src/Pmpr/Cover/Herfe/Herfe.php:227
 msgid "X Large"
 msgstr "خیلی بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:235
+#: src/Pmpr/Cover/Herfe/Herfe.php:228
 msgid "XX Large"
 msgstr "خیلی خیلی بزرگ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:236
+#: src/Pmpr/Cover/Herfe/Herfe.php:229
 msgid "Full Size"
 msgstr "اندازه کامل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:290
+#: src/Pmpr/Cover/Herfe/Herfe.php:283
 msgid "Single Sidebar"
 msgstr "سایدبار سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:291
+#: src/Pmpr/Cover/Herfe/Herfe.php:284
 msgid "Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:294
+#: src/Pmpr/Cover/Herfe/Herfe.php:287
 msgid "Taxonomy Sidebar"
 msgstr "سایدبار طبقه‌بندی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:295
+#: src/Pmpr/Cover/Herfe/Herfe.php:288
 msgid "Sticky Taxonomy Sidebar"
 msgstr "سایدبار استیکی طبقه‌بندی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:298
+#: src/Pmpr/Cover/Herfe/Herfe.php:291
 msgid "Post Single Sidebar"
 msgstr "سایدبار سینگل نوشته"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:299
+#: src/Pmpr/Cover/Herfe/Herfe.php:292
 msgid "Post Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل نوشته"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:302
+#: src/Pmpr/Cover/Herfe/Herfe.php:295
 msgid "Event Single Sidebar"
 msgstr "سایدبار سینگل رویداد"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:303
+#: src/Pmpr/Cover/Herfe/Herfe.php:296
 msgid "Event Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل رویداد"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:306
+#: src/Pmpr/Cover/Herfe/Herfe.php:299
 msgid "English Article Single Sidebar"
 msgstr "سایدبار سینگل نوشته انگلیسی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:307
+#: src/Pmpr/Cover/Herfe/Herfe.php:300
 msgid "English Article Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل نوشته انگلیسی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:310
+#: src/Pmpr/Cover/Herfe/Herfe.php:303
 msgid "After Single Add to Cart"
 msgstr "بعد از افزودن به سبد خرید سینگل"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:314
+#: src/Pmpr/Cover/Herfe/Herfe.php:307
 msgid "Product Single Sidebar"
 msgstr "سایدبار سینگل محصول"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:315
+#: src/Pmpr/Cover/Herfe/Herfe.php:308
 msgid "Product Sticky Single Sidebar"
 msgstr "سایدبار استیکی سینگل محصول"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:320 src/Pmpr/Cover/Herfe/Setting.php:944
+#: src/Pmpr/Cover/Herfe/Herfe.php:313 src/Pmpr/Cover/Herfe/Setting.php:944
 msgid "Close"
 msgstr "بستن"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:321
+#: src/Pmpr/Cover/Herfe/Herfe.php:314
 msgid "Reply"
 msgstr "پاسخ"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:322 src/Pmpr/Cover/Herfe/Setting.php:945
+#: src/Pmpr/Cover/Herfe/Herfe.php:315 src/Pmpr/Cover/Herfe/Setting.php:945
 msgid "Show All"
 msgstr "مشاهده همه"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:323
+#: src/Pmpr/Cover/Herfe/Herfe.php:316
 msgid "Magazines"
 msgstr "فصلنامه‌ها"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:324
+#: src/Pmpr/Cover/Herfe/Herfe.php:317
 msgid "Related to"
 msgstr "مرتبط با"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:325
+#: src/Pmpr/Cover/Herfe/Herfe.php:318
 msgid "Next Issues"
 msgstr "شماره‌های بعدی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:326
+#: src/Pmpr/Cover/Herfe/Herfe.php:319
 msgid "Prev Issues"
 msgstr "شماره‌های قبلی"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:327
+#: src/Pmpr/Cover/Herfe/Herfe.php:320
 msgid "More Information"
 msgstr "اطلاعات بیشتر"
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:328
+#: src/Pmpr/Cover/Herfe/Herfe.php:321
 msgid "There is no data to display."
 msgstr "داده‌ای برای نمایش وجود ندارد."
 
-#: src/Pmpr/Cover/Herfe/Herfe.php:329
+#: src/Pmpr/Cover/Herfe/Herfe.php:322
 msgid "There are currently no events in this field."
 msgstr "در حال حاضر رویدادی در این زمینه وجود ندارد."
 
