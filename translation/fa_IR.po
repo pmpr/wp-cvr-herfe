@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Herfe Cover\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2025-09-30 12:06+0330\n"
+"POT-Creation-Date: 2025-09-30 20:51+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -134,22 +134,22 @@ msgstr "جستجو"
 msgid "Header Search Icon"
 msgstr "آیکون جستجو هدر"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:33
+#: src/Pmpr/Cover/Herfe/Footer.php:31
 msgid "Wordpress Design and Development by Pmpr"
 msgstr "تیم توسعه وب پیمان محمدپور"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:38
+#: src/Pmpr/Cover/Herfe/Footer.php:36
 msgid "Signature"
 msgstr "امضا"
 
+#: src/Pmpr/Cover/Herfe/Footer.php:44 src/Pmpr/Cover/Herfe/Footer.php:45
 #: src/Pmpr/Cover/Herfe/Footer.php:46 src/Pmpr/Cover/Herfe/Footer.php:47
-#: src/Pmpr/Cover/Herfe/Footer.php:48 src/Pmpr/Cover/Herfe/Footer.php:49
-#: src/Pmpr/Cover/Herfe/Footer.php:50
+#: src/Pmpr/Cover/Herfe/Footer.php:48
 #, php-format
 msgid "Footer #%s"
 msgstr "پاورقی شماره %s"
 
-#: src/Pmpr/Cover/Herfe/Footer.php:82
+#: src/Pmpr/Cover/Herfe/Footer.php:80
 msgid "Scroll UP"
 msgstr "رفتن به بالا"
 

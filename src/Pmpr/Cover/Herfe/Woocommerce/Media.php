@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             68dbbdcb855ab             |
+    |             68dda3c509db3             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Herfe\Woocommerce; use Pmpr\Common\Foundation\Interfaces\Constants; class Media extends Common { const oomgaogyuiksiwag = [Constants::cwswygwykwgsqiwu => Constants::ccgiciqicykuquwc, Constants::egwoacukmsioosum => Constants::MEDIUM, 'gallery_thumbnail' => Constants::meugkwqwuyoyeeqs]; public function kgquecmsgcouyaya() { $this->cecaguuoecmccuse('single_product_archive_thumbnail_size', [$this, 'mekwqsyuqqguouas'], 999); foreach (self::oomgaogyuiksiwag as $ymqmyyeuycgmigyo => $oiegiwogmwmawkeo) { $this->cecaguuoecmccuse("woocommerce_get_image_size_{$ymqmyyeuycgmigyo}", [$this, 'wmymmoesqugiuwey'], 10, 2); } } public function wmymmoesqugiuwey($oiegiwogmwmawkeo, $ymqmyyeuycgmigyo = null) : array { if (!$ymqmyyeuycgmigyo) { $ymqmyyeuycgmigyo = str_replace('woocommerce_get_image_size_', '', current_filter()); } $gkyciwoiiisgywcs = $this->caokeucsksukesyo()->ywqgcuymeiswqyqc(); $wyicceigkekkkwgs = $this->mkcqggisuwuuueqm(); $gkiuoymeukweiaaw = $gkyciwoiiisgywcs->get($wyicceigkekkkwgs, $gkyciwoiiisgywcs->get(self::oomgaogyuiksiwag, $ymqmyyeuycgmigyo)); if ($gkiuoymeukweiaaw) { $oiegiwogmwmawkeo = $gkiuoymeukweiaaw; } return $oiegiwogmwmawkeo; } public function mekwqsyuqqguouas() : string { return Constants::MEDIUM; } }
