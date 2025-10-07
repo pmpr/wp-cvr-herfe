@@ -1,56 +1,59 @@
-{% set contact_page = get_cover_option('contact_page', {}) %}
+{% extends get_cover_template('container') %}
+{% block inside_container %}
 
-<div class="row">
-    <div class="order-lg-0 col-lg-7 pr-lg-10">
-        {{ render_if_has_content('div', {class: 'text-normal mb-5'}, content) }}
-        {% if contact_page.contacts is not empty %}
-            <div class="my-5">
+    {% set contact_page = get_cover_option('contact_page', {}) %}
+    <div class="row">
+        <div class="order-lg-0 col-lg-7 pr-lg-10">
+            {{ render_if_has_content('div', {class: 'text-normal mb-5'}, content) }}
+            {% if contact_page.contacts is not empty %}
+                <div class="my-5">
 
-                {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.contacts_title) }}
+                    {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.contacts_title) }}
 
-                {% include get_cover_template('common/contacts/items') with {
-                    items: contact_page.contacts,
-                    show_icon: 1,
-                    icon_size: 'lg',
-                    icon_color: 'primary',
-                    text_color: 'primary-secondary'
-                } %}
-            </div>
-
-        {% endif %}
-        {% if contact_page.socials is not empty %}
-
-            <div class="my-5">
-                {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.socials_title) }}
-                <div class="d-flex">
-                    {% include get_cover_template('common/socials') with {
-                        socials: contact_page.socials,
-                        icon_size: 'xl'
+                    {% include get_cover_template('common/contacts/items') with {
+                        items: contact_page.contacts,
+                        show_icon: 1,
+                        icon_size: 'lg',
+                        icon_color: 'primary',
+                        text_color: 'primary-secondary'
                     } %}
                 </div>
-            </div>
-        {% endif %}
-        {% if contact_page.address is not empty %}
-            <div class="my-5">
-                {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.address_title) }}
-                {{ contact_page.address|raw }}
-            </div>
-        {% endif %}
-        {% if contact_page.directions is not empty %}
 
-            <div class="my-5">
-                {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.directions_title) }}
-                <div class="d-flex">
-                    {% include get_cover_template('common/directions') with {
-                        directions: contact_page.directions,
-                        icon_size: 'xl'
-                    } %}
+            {% endif %}
+            {% if contact_page.socials is not empty %}
+
+                <div class="my-5">
+                    {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.socials_title) }}
+                    <div class="d-flex">
+                        {% include get_cover_template('common/socials') with {
+                            socials: contact_page.socials,
+                            icon_size: 'xl'
+                        } %}
+                    </div>
                 </div>
-            </div>
-        {% endif %}
+            {% endif %}
+            {% if contact_page.address is not empty %}
+                <div class="my-5">
+                    {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.address_title) }}
+                    {{ contact_page.address|raw }}
+                </div>
+            {% endif %}
+            {% if contact_page.directions is not empty %}
+
+                <div class="my-5">
+                    {{ render_if_has_content('h2', {class: 'h6 mb-5'}, contact_page.directions_title) }}
+                    <div class="d-flex">
+                        {% include get_cover_template('common/directions') with {
+                            directions: contact_page.directions,
+                            icon_size: 'xl'
+                        } %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+        <div class="order-2 col-lg-5">
+            {{ render_if_has_content('h2', {class: 'h6'}, contact_page.form_title) }}
+            {{ form|raw }}
+        </div>
     </div>
-    <div class="order-2 col-lg-5">
-        {{ render_if_has_content('h2', {class: 'h6'}, contact_page.form_title) }}
-        {{ form|raw }}
-    </div>
-</div>
+{% endblock %}

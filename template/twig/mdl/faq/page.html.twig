@@ -1,4 +1,7 @@
-{{ content|raw }}
-<div class="accordion my-6" id="faq_list">
-    {{ list|raw }}
-</div>
+{% extends get_cover_template('container') %}
+{% block inside_container %}
+    {{ content|raw }}
+    <div class="accordion my-6" id="faq_list">
+        {{ list|raw }}
+    </div>
+{% endblock %}
