@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             68e598cd16739             |
+    |             694c4d392069f             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Herfe; use Pmpr\Common\Foundation\Interfaces\Constants; class Ajax extends Container { const wiysygukkaksueso = 'herfe_cover_ajax_'; const aycmswkkqakuaiay = self::wiysygukkaksueso . 'get_mega_tags'; public function wigskegsqequoeks() { $this->iqkqummseggmikgo(self::aycmswkkqakuaiay, [$this, 'wumgseyywswswicq']); } public function wumgseyywswswicq() { $eiicaiwgqkgsekce = $this->caokeucsksukesyo()->giiecckwoyiawoyy(); $eiicaiwgqkgsekce->aoyemeikggcigigu(true); $aoskwucuugeuaeus = $this->caokeucsksukesyo()->kckogqkiycqeumoa(); $kmmywmgcgwceeqii = $aoskwucuugeuaeus->ciugwooasaqcywas(Constants::ocsomysosuqaimuc, [Constants::mkucwyayaakigquq => true, Constants::gqiasegggowomgie => Constants::NAME, Constants::awkcoioakcaougmq => Constants::omaksceqmigeaoko]); $keccaugmemegoimu = []; foreach ($kmmywmgcgwceeqii as $scwiymciagumsuiw) { if ($meqocwsecsywiiqs = $aoskwucuugeuaeus->qcgakseyaikigqco($scwiymciagumsuiw)) { $ucwaqsekewaegois = mb_substr($meqocwsecsywiiqs, 0, 1, 'utf8'); switch ($ucwaqsekewaegois) { case 'آ': $ucwaqsekewaegois = 'ا'; break; case 'ي': $ucwaqsekewaegois = 'ی'; break; } $keccaugmemegoimu[$ucwaqsekewaegois][] = [Constants::ogigqueukwysusii => $aoskwucuugeuaeus->qmgcisuuikgmqcsu($scwiymciagumsuiw), Constants::ouywiegeiyuaaawo => $aoskwucuugeuaeus->aqcogscycyycgkuq($scwiymciagumsuiw), Constants::qescuiwgsyuikume => $meqocwsecsywiiqs]; } } $eiicaiwgqkgsekce->uaggqsoeugksgooc($keccaugmemegoimu); } }

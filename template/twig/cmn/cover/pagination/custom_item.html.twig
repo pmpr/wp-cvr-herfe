@@ -1,0 +1,8 @@
+{% set page = page|default(1) %}
+{% set element = is_current or page == '...' ? 'span' : 'a' %}
+<li class="page-item">
+    <{{ element }} class="page-numbers page-link{% if element == 'span' %} current bg-primary text-white{% endif %}" href="#" data-page="{{ page|esc_attr }}">
+        {{ page == '...' ? page : label|esc_html }}
+    </{{ element }}>
+</li>
+

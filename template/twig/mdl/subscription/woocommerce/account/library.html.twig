@@ -9,6 +9,7 @@
                         {% include get_cover_template('common/post/thumbnail') with {
                             post: item.post_id,
                             has_figure: 0,
+                            image_attr: {class: 'flex-shrink-0'},
                             image_size: [120, 120],
                         } %}
                         <div class="ml-4 w-100 d-flex flex-column justify-content-between">
@@ -30,6 +31,9 @@
             </div>
         {% endfor %}
     </div>
+    {% if pagination_links is not empty  %}
+        {{ pagination_links|raw }}
+    {% endif %}
 {% else %}
     {{ empty_message|raw }}
 {% endif %}

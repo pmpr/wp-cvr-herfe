@@ -1,0 +1,24 @@
+<nav id="{{ id|default('pagination')|esc_attr }}" class="my-6 d-flex justify-content-center"
+     aria-label="{{ pagination_label|raw }}">
+    <ul class="page-numbers pagination-area pagination mb-0">
+        {% for item in items %}
+            <li class="{% if not loop.last %}mr-2{% endif %}">
+                {% set classes = 'page-numbers page-link font-weight-bold d-block fs-sm p-3' %}
+                {% if item.url is not empty %}
+                    {% set classes = classes ~ ' bg-gray-1 text-primary text-hover-white bg-hover-primary icon-hover-white' %}
+                    {% set element = 'a' %}
+                {% elseif item.current %}
+                    {% set classes = classes ~ ' current text-white bg-primary' %}
+                    {% set element = 'span' %}
+                {% else %}
+                    {% set classes = classes ~ ' dots border-0 text-primary bg-white' %}
+                    {% set element = 'span' %}
+                {% endif %}
+                <{{ element }} class="{{ classes|esc_attr }}"{% if item.url is not empty %} href="{{ item.url }}"{% endif %} data-page="{{ item.page|esc_attr }}">
+                    {{ item.label|esc_html }}
+                </{{ element }}>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
+
