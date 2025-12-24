@@ -1,37 +1,36 @@
-{% block get_cover_template('container') %}
+{#{% block get_cover_template('container') %}#}
 
-{% block inside_container %}
+{#{% block inside_container %}#}
 
-    {% include get_cover_template('common/header/index') with {
-        has_container: 0
-    } %}
+{#    {% include get_cover_template('common/header/index') with {#}
+{#        has_container: 0#}
+{#    } %}#}
+<article class="plan card shadow mn-h-450 w-100">
+    <div class="card-body pt-0 text-center mb-14">
+        {{ wp_get_attachment_image(plan.image, 'thumbnail', {class: 'mb-5'})|raw }}
+        {% if plan.features is not empty %}
+            <div class="d-flex justify-content-center">
+                <ul class="list-group">
+                    {% for feature in plan.features %}
+                        {% if feature.text is not empty %}
+                            <li class="list-group-item d-flex p-0{% if not loop.last %} mb-3{% endif %}">
+                                {{ render_icon(feature_icon, {class: 'my-auto icon-success icon-md mr-2'}) }}
+                                <span class="my-auto">{{ feature.text|raw }}</span>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-    <article class="plan card shadow mn-h-450 w-100">
-        <div class="card-body pt-0 text-center mb-14">
-            {{ wp_get_attachment_image(plan.image, 'thumbnail', {class: 'mb-5'})|raw }}
-            {% if plan.features is not empty %}
-                <div class="d-flex justify-content-center">
-                    <ul class="list-group">
-                        {% for feature in plan.features %}
-                            {% if feature.text is not empty %}
-                                <li class="list-group-item d-flex p-0{% if not loop.last %} mb-3{% endif %}">
-                                    {{ render_icon(feature_icon, {class: 'my-auto icon-success icon-md mr-2'}) }}
-                                    <span class="my-auto">{{ feature.text|raw }}</span>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endif %}
+        {{ render_if_has_content('div', {class: 'mt-5 text-muted'}, wpautop(plan.description)) }}
 
-            {{ render_if_has_content('div', {class: 'mt-5 text-muted'}, wpautop(plan.description)) }}
-
-            {% include get_cover_template('common/call_to_action') with {
-                has_icon: 0,
-                attrs: {class: 'position-absolute bottom-0 left-0 btn-block'},
-                text: add_to_cart and plan.add_to_cart_text is not empty ? plan.add_to_cart_text : plan.button_text,
-                permalink: add_to_cart and plan.add_to_cart_url is not empty ? plan.add_to_cart_url : plan.permalink,
-            } %}
-        </div>
-    </article>
-{% endblock %}
+        {% include get_cover_template('common/call_to_action') with {
+            has_icon: 0,
+            attrs: {class: 'position-absolute bottom-0 left-0 btn-block'},
+            text: add_to_cart and plan.add_to_cart_text is not empty ? plan.add_to_cart_text : plan.button_text,
+            permalink: add_to_cart and plan.add_to_cart_url is not empty ? plan.add_to_cart_url : plan.permalink,
+        } %}
+    </div>
+</article>
+{#{% endblock %}#}
