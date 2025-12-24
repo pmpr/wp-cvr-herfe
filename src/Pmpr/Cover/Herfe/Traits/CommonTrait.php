@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             694c7a530dd4a             |
+    |             694c7c6a5d842             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Herfe\Traits; use Pmpr\Common\Foundation\Interfaces\Constants; use Pmpr\Cover\Herfe\Customizer; trait CommonTrait { public function mkcqggisuwuuueqm() : array { return [ Constants::qisqmmesuewemeqg => [Constants::jkiyuoygceaaogoq => 1, Constants::qomookamaskuoswk => 970, Constants::sogmkkcwuamuqegw => 650, Constants::kqeokggqcsesmqco => 0], Constants::ccgiciqicykuquwc => [Constants::jkiyuoygceaaogoq => 1, Constants::qomookamaskuoswk => 420, Constants::sogmkkcwuamuqegw => 420, Constants::kqeokggqcsesmqco => 0], Constants::MEDIUM => [Constants::jkiyuoygceaaogoq => 1, Constants::qomookamaskuoswk => 310, Constants::sogmkkcwuamuqegw => 310, Constants::kqeokggqcsesmqco => 0], Constants::egwoacukmsioosum => [Constants::jkiyuoygceaaogoq => 1, Constants::qomookamaskuoswk => 200, Constants::sogmkkcwuamuqegw => 200, Constants::kqeokggqcsesmqco => 0], Constants::meugkwqwuyoyeeqs => [Constants::jkiyuoygceaaogoq => 1, Constants::qomookamaskuoswk => 72, Constants::sogmkkcwuamuqegw => 72, Constants::kqeokggqcsesmqco => 1], ]; } public function wkiaeewoqmsougim(string $ymqmyyeuycgmigyo, $ggauoeuaesiymgee = false) { return Customizer::symcgieuakksimmu()->giiuwsmyumqwwiyq($ymqmyyeuycgmigyo, $ggauoeuaesiymgee); } }
